@@ -1,6 +1,6 @@
 # intro to SQL  
 
-## Repo short URL [htmlrepo.sage.codes](https://github.com/sagecodes/learn-to-code-html-css)
+## short URL to this repo [sqlrepo.sage.codes](https://github.com/sagecodes/into-to-sql)
 
 ## Do these things first!
 
@@ -25,6 +25,7 @@ You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited 
 ## About me:
 Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist here at Galvanize! Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects! 
 
+- Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
 - Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
@@ -40,41 +41,34 @@ Give a quick Intro!
 
 ## Why is data important
 
-Data = infomation 
+Data = infomation | Imagine a phonebook with hundeds of people and businesses
 
-Databases = computerized storage of data! 
+Databases = computerized storage of data | imagine an organized digital collections of people and businesses.
 
 - Dynamic sites
 	- Facebook
-	- Ebay 
+	- Gmail 
 - Mobile apps
-	- j 
+	- Uber
+	- Snapchat 
 - Data for reccomndations
 	- Netflix
 	- Amazon products
-	- h 
-- Tracking
+- Item Tracking
 	- Library
 	- UPS
-	- 
 
-Roles:
-Web Developer
-Data Analysis
-Data Science
-Database Admin
+Some Professional Roles that work with databases:
 
-
-
-
-	
-
-
+- Web Developer
+- Data Analysis
+- Data Science
+- Database Admin
 
 
 ## What is SQL?
 
-Pronounced S. Q. L. or Sequel. Eitherway is fine!
+Pronounced `S.` `Q.` `L.` or Sequel. Eitherway is fine!
 
 SQL stands for Structed Query Language
 
@@ -88,17 +82,18 @@ Reading Data from a database is known as Querying.
 
 Common SQL Databases:
 
-Each of these can be Queried using the SQL programming Language
+Each of these databases can be Queried using the SQL programming Language.
 - MySQL
 - PostgreSQL
 - Microsoft SQL
 - SQLie 
 - Oracle
 
+*Note:* There are some slight differences to each database
+
 
 Other databases 
 These are often referred to noSQL databased
-
 
 - GraphQL
 - MongoDB
@@ -164,13 +159,13 @@ Products Tables:
 |  3 | Aniseed Syrup  | 1  | 2  |  12 - 550 ml bottles | 10  |
 
 
-Filter data example:
+Filter data table example:
 
-Rearrange example:
+Rearrange table example:
 
-Note that this isn't actually changing the database. You're just choosing what to look at.
+*Note:* This isn't actually changing the database. You're just choosing what and how to look at the data.
 
-Same data can be used in diffent ways acrros applications
+The same database can be used in diffent ways acrros applications at the same time.
 
 - Website could be pulling data to show your purchase history
 - An analyst could be pulling the data to learn what the most popular item is
@@ -187,13 +182,100 @@ The most common data types are:
 
 Its inportant to have the correct data type for your data. This ensures that sorting and calculations work properly.
 
-Data types may change depenidng on which database you're using.
+*Note:* Data types may change depenidng on which database you're using.
+
+## lets do some SQL!
+
+Visit [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) and navigate to the SQL section.
+
+
+#### Filtering
+
+Lets take a look at all the categories of prducts we have
+
+`SELECT * FROM Categories`
+
+Lets see how many customers do we have?
+
+`SELECT COUNT(*) FROM Customers`
+
+Lets take a look at our orders
+
+`SELECT * FROM Orders`
+
+Lets rearrange the orders by date
+
+```
+SELECT * FROM Orders
+ORDER BY OrderDate DESC
+```
+
+Neat! Lets see which customer made that top order! We will take the value from the CustomerID column.
+
+```
+SELECT * FROM customers
+WHERE CustomerID = '66'
+```
+
+
+
+#### Reranging
+
+#### Math
+
+- Sum
+- AVG
+- Count
+
+
+#### Joins
+
+#### Group by
+
+Import first step is to understand your data.
+
+- How is it structered?
+- What does it represent?
+
+
+
+## Questions
+Knowing what we just learned lets try to answer some questions about our data!
+
+- What is the most popular item?
+- Which customer has spent the most money?
+- What was the largest order?
+- Whats the most popular category?
+- Which cusomer has returned the most?
+
 
 ## Keep Learning!!!
 
+challenges:
+
+
+Reosurces:
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
-- [teamtreehouse](https://teamtreehouse.com/tracks/beginning-sql) - Paid
 - [mimo](https://getmimo.com/) Mobile app
 
+## Upcoming Events
+
+## Upcoming Courses
+
+
+
+## Answers
+Answers to the Questions Section:
+
+- Q: What is the most popular item?
+	- A:
+	- Query: `bjblblnlnnlnlk`
+- Which customer has spent the most money?
+
+- What was the largest order?
+
+- Whats the most popular category?
+
+- Which cusomer has returned the most?
