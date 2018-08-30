@@ -164,10 +164,30 @@ Products Tables:
 |  3 | Aniseed Syrup  | 1  | 2  |  12 - 550 ml bottles | 10  |
 
 
+Filter data example:
 
+Rearrange example:
 
+Note that this isn't actually changing the database. You're just choosing what to look at.
 
+Same data can be used in diffent ways acrros applications
 
+- Website could be pulling data to show your purchase history
+- An analyst could be pulling the data to learn what the most popular item is
+
+### Data types
+
+data types for table columns are defined in the schema
+
+The most common data types are:
+
+- Text (Names, Desciptions)
+- Numeric (cost, age, weight, quantity)
+- Dates (Dates and time)
+
+Its inportant to have the correct data type for your data. This ensures that sorting and calculations work properly.
+
+Data types may change depenidng on which database you're using.
 
 ## Keep Learning!!!
 
