@@ -22,7 +22,7 @@
  
 ## What this workshop is
 
-A super friendly introduction to web development with HTML and CSS! No previous experience expected! 
+A super friendly introduction to SQL No previous experience expected! 
 
 You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited and comfortable to keep working and learning on your own! Come to our weekly code hours [meetups](https://www.meetup.com/Learn-Code-Seattle/events/) to ask questions if you get stuck and show off what you've been working on!
 
@@ -48,10 +48,15 @@ Give a quick Intro!
 
 - Whats your name?
 - Whats your background?
-- Why are you interested in Web Development?
+- Why are you interested in SQL and data?
 
 ## What is SQL?
 
+
+
+## SETUP
+
+Instead of going through the process of setting up a dadabase we're going to use the online editor at [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
 
 
 
@@ -59,7 +64,7 @@ Give a quick Intro!
 
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
-- [datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
+- [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
 - [teamtreehouse](https://teamtreehouse.com/tracks/beginning-sql) - Paid
 - [mimo](https://getmimo.com/) Mobile app
 
