@@ -398,7 +398,7 @@ Answers to the Questions Section:
 - Q: What is the most popular item?
 	- A: Gorgonzola Telino
 
-	```
+```
 SELECT SUM(OrderDetails.Quantity), Products.ProductName, OrderDetails.ProductID
 FROM OrderDetails
 JOIN Products ON OrderDetails.productID=Products.ProductID
@@ -410,7 +410,10 @@ ORDER BY SUM(OrderDetails.Quantity) DESC
 - Which customer has spent the most money?
 	- A: Ernst Handel 
 	
-	```
+	
+	FIX: DOn't Just SUM price. Need to multiple
+	
+```
 SELECT Customers.CustomerName, SUM(Products.Price)
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
@@ -419,7 +422,7 @@ JOIN Products ON OrderDetails.ProductID=Products.ProductID
 GROUP BY CustomerName
 ORDER BY SUM(Products.Price) DESC
 	
-	```
+```
 
 - Which customer has returned the most?
 	- A: Ernst Handel
