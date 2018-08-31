@@ -170,6 +170,9 @@ The same database can be used in diffent ways acrros applications at the same ti
 - Website could be pulling data to show your purchase history
 - An analyst could be pulling the data to learn what the most popular item is
 
+
+Read more details and how to create data bases [here](https://www.w3schools.com/sql/sql_create_db.asp).
+
 ### Data types
 
 data types for table columns are defined in the schema
@@ -184,12 +187,22 @@ Its inportant to have the correct data type for your data. This ensures that sor
 
 *Note:* Data types may change depenidng on which database you're using.
 
+
+We could spend a whole workshop discussing databases, but lets move to more SQL.
+
+
 ## lets do some SQL!
 
 Visit [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) and navigate to the SQL section.
 
 
 ### Querying
+
+Import first step is to understand your data.
+
+- How is it structered?
+- What does it represent?
+
 
 Lets do some different types quering. 
 
@@ -224,24 +237,15 @@ WHERE CustomerID = '66'
 Cool! We can also query for matches in multiple columns
 
 ```
-
-SELECT * FROM customers
-WHERE CustomerID = '66' AND ###
-
+SELECT * FROM OrderDetails
+WHERE ProductID = '14' AND 	Quantity <'10'
 ```
 
-```
-OR
-```
-
+We can also filter comlumns by more than one value.
 
 ```
-LIKE
-
-```
-
-```
-Greater than
+SELECT * FROM OrderDetails
+WHERE ProductID = '14' OR ProductID='42'
 ```
 
 
@@ -270,12 +274,20 @@ ORDER BY Country ASC;
 
 ```
 
+
+Sometimes we want to filter by records that contain values or characters that are not an exact match.
+
 What customers have a name starting with `A`?
 
 ```
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'A%'
 ```
+
+- 'A%' Starts with an A
+- '%A' Ends with an A
+- '%A%' Contains an A
+
 
 #### Math FUNCTIONS
 
@@ -285,60 +297,41 @@ WHERE CustomerName LIKE 'A%'
 
 ### Joins
 
-Join can be a bit trick to understand, so don't worry if you don't quite get it!
+Joins can be a bit trick to understand, so don't worry if you don't quite get it! read and practice them further [here](https://www.w3schools.com/sql/sql_join.asp)
 
+Return combined table
 
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID
-FROM Orders
-JOIN Customers ON Orders.CustomerID=Customers.CustomerID
-JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-
- 
- 
-SELECT * FROM Orders
-JOIN Customers ON Orders.CustomerID=Customers.CustomerID
-JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-
-        
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID, Products.productName
-FROM Orders
-JOIN Customers ON Orders.CustomerID=Customers.CustomerID
-JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-JOIN Products ON OrderDetails.ProductID=Products.ProductID
-
-Return cobined table
+```
 
 SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID, Products.productName, Products.Price
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 JOIN Products ON OrderDetails.ProductID=Products.ProductID
+```
+By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
+.
 
-
-Sum Who spent the most
-
-SELECT Customers.CustomerName, SUM(Products.Price)
-FROM Orders
-JOIN Customers ON Orders.CustomerID=Customers.CustomerID
-JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-JOIN Products ON OrderDetails.ProductID=Products.ProductID
-GROUP BY CustomerName
-ORDER BY SUM(Products.Price) DESC
-
-
-
-
-
+Finde a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
 
 
 #### Group by
 
-Import first step is to understand your data.
+Instead of getting each row, sometimes we want to group them by 
 
-- How is it structered?
-- What does it represent?
+```
+SELECT COUNT(ShipperID), ShipperID FROM [Orders]
+GROUP by ShipperID
+```
 
 
+```
+SELECT COUNT(Orders.ShipperID), Orders.ShipperID, Shippers.ShipperName
+FROM [Orders]
+JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID
+GROUP by Orders.ShipperID
+ORDER BY COUNT(Orders.ShipperID) DESC
+```
 
 ## Questions
 Knowing what we just learned lets try to answer some questions about our data!
@@ -347,9 +340,9 @@ Knowing what we just learned lets try to answer some questions about our data!
 - What is the most expensive item?
 - What is the most popular item?
 - Which customer has spent the most money?
-- What was the largest order?
-- Whats the most popular category?
 - Which cusomer has returned the most?
+- Whats the most popular category?
+
 
 
 ## Keep Learning!!!
@@ -363,9 +356,39 @@ Reosurces:
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
 - [mimo](https://getmimo.com/) Mobile app
 
-## Upcoming Events
+## Upcoming Events!
+We host sooo many events! check out out [calendar](https://www.galvanize.com/seattle/events)
 
-## Upcoming Courses
+[Learn code](https://www.meetup.com/Learn-Code-Seattle/events/). Thats this meetup! We do workshops and community programming nights! 
+
+Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events/):
+
+- [Intro to Javascript](https://www.meetup.com/Learn-Code-Seattle/events/253466275/) - 9/06 6:30pm
+- [Intro to Git and GitHub](https://www.meetup.com/Learn-Code-Seattle/events/253466429/) - 9/19 6:30pm
+- [More!!!](https://www.meetup.com/Learn-Code-Seattle/events/)
+
+## What is Galvanize?
+###### We are a community!
+#### Immersive Bootcamp
+- [Data Science](https://www.galvanize.com/seattle/data-science)
+- [Web Development](https://www.galvanize.com/seattle/web-development)
+
+#### Part-Time Courses
+- [Data Analytics](https://www.galvanize.com/seattle/data-analytics)
+- [Web Development Foundations with JavaScript](https://www.galvanize.com/seattle/web-development-foundations)
+- [Data Science Fundamentals](https://www.galvanize.com/seattle/data-science-fundamentals)
+
+
+
+#### Co-working Space
+[work in our building!](https://www.galvanize.com/entrepreneur)
+
+## Questions:
+Please feel free to reach out to me with any questions!
+
+- Twitter: [@sagecodes](https://twitter.com/@sagecodes)
+- LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
+- Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
 
 
 
