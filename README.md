@@ -41,7 +41,7 @@ Give a quick Intro!
 
 ## Why is data important
 
-Data = infomation | Imagine a phonebook with hundeds of people and businesses
+Data = information | Imagine a phonebook with hundreds of people and businesses
 
 Databases = computerized storage of data | imagine an organized digital collections of people and businesses.
 
@@ -51,7 +51,7 @@ Databases = computerized storage of data | imagine an organized digital collecti
 - Mobile apps
 	- Uber
 	- Snapchat 
-- Data for reccomndations
+- Data for recommendations
 	- Netflix
 	- Amazon products
 - Item Tracking
@@ -68,21 +68,17 @@ Some Professional Roles that work with databases:
 
 ## What is SQL?
 
-Pronounced `S.` `Q.` `L.` or Sequel. Eitherway is fine!
+Pronounced `S` `Q` `L` or Sequel. Either way is fine!
 
-SQL stands for Structed Query Language
+SQL stands for Structured Query Language
 
-Reading Data from a database is known as Querying.
-
-
-- DDL Data DefnitionLanguage
-- DML DataManipulationLanguage
-- DCL DataControlLanguage
+When we return Data from a database we call it Querying.
 
 
 Common SQL Databases:
 
 Each of these databases can be Queried using the SQL programming Language.
+
 - MySQL
 - PostgreSQL
 - Microsoft SQL
@@ -92,25 +88,21 @@ Each of these databases can be Queried using the SQL programming Language.
 *Note:* There are some slight differences to each database
 
 
-Other databases 
-These are often referred to noSQL databased
+Some other popular databases 
 
-- GraphQL
 - MongoDB
 - Couchbase
 - Redis
 
+These are often referred to noSQL databased. Read more about noSQL [here](https://www.mongodb.com/nosql-explained)
 
 
-#### Where SQL used?
+<!--#### Where SQL used?
 
-#### WHat is an ORM?
+#### What is an ORM?
 
 ORM stands for Object relation model
-
-#### What is noSQL?
-
-
+-->
 
 
 ## What is a relational database?
@@ -123,7 +115,7 @@ Sections are called tables
 
 
 ##### Tables
-You can think of tables as speadsheets:
+You can think of tables as spreadsheets:
 
 
 | Column ↓  | Column ↓   |  Column ↓  |
@@ -132,9 +124,9 @@ You can think of tables as speadsheets:
 | Row →   |   |   |
 | Row →   |   |   | 
 
-##### Table Organizaton
+##### Table Organization
 
-Usually seperate tables contain data for a specific type of thing:
+Usually separate tables contain data for a specific type of thing:
 
 If we look at [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) again you can see all the different tables in the database
 
@@ -165,13 +157,13 @@ Rearrange table example:
 
 *Note:* This isn't actually changing the database. You're just choosing what and how to look at the data.
 
-The same database can be used in diffent ways acrros applications at the same time.
+The same database can be used in different ways across applications at the same time.
 
 - Website could be pulling data to show your purchase history
 - An analyst could be pulling the data to learn what the most popular item is
 
 
-Read more details and how to create data bases [here](https://www.w3schools.com/sql/sql_create_db.asp).
+
 
 ### Data types
 
@@ -179,16 +171,18 @@ data types for table columns are defined in the schema
 
 The most common data types are:
 
-- Text (Names, Desciptions)
+- Text (Names, Descriptions)
 - Numeric (cost, age, weight, quantity)
 - Dates (Dates and time)
 
-Its inportant to have the correct data type for your data. This ensures that sorting and calculations work properly.
+Its important to have the correct data type for your data. This ensures that sorting and calculations work properly.
 
-*Note:* Data types may change depenidng on which database you're using.
+*Note:* Data types may change depending on which database you're using.
 
 
-We could spend a whole workshop discussing databases, but lets move to more SQL.
+We could spend a whole workshop discussing databases, but lets move to more SQL. 
+
+Read more details on databases [here](https://www.w3schools.com/sql/sql_create_db.asp). 
 
 
 ## lets do some SQL!
@@ -200,13 +194,13 @@ Visit [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_selec
 
 Import first step is to understand your data.
 
-- How is it structered?
+- How is it structured?
 - What does it represent?
 
 
-Lets do some different types quering. 
+Lets do some different types querying. 
 
-Lets take a look at all the categories of prducts we have
+Lets take a look at all the categories of products we have
 
 `SELECT * FROM Categories`
 
@@ -224,7 +218,7 @@ Lets rearrange the orders by date
 SELECT * FROM Orders
 ORDER BY OrderDate DESC
 ```
-ASC = Acending
+ASC = Ascending
 DESC = Descending
 
 Neat! Lets see which customer made that top order (most recent)! We will take the value from the CustomerID column.
@@ -241,7 +235,7 @@ SELECT * FROM OrderDetails
 WHERE ProductID = '14' AND 	Quantity <'10'
 ```
 
-We can also filter comlumns by more than one value.
+We can also filter columns by more than one value.
 
 ```
 SELECT * FROM OrderDetails
@@ -249,14 +243,14 @@ WHERE ProductID = '14' OR ProductID='42'
 ```
 
 
-So far we have been retrurning all the colmuns of a record that match our query. What if we want to only look at a few of them? 
+So far we have been returning all the columns of a record that match our query. What if we want to only look at a few of them? 
 
-Instead of using `*` to select all we can put in the specifc columns we want returned. We can also put them in different order!
+Instead of using `*` to select all we can put in the specific columns we want returned. We can also put them in different order!
 
 ```
 SELECT Country, city, CustomerName FROM Customers
 ```
-Lets order by Acending order (A-Z) of Country Name
+Lets order by Ascending order (A-Z) of Country Name
 
 ```
 SELECT Country, city, CustomerName FROM Customers
@@ -289,11 +283,8 @@ WHERE CustomerName LIKE 'A%'
 - '%A%' Contains an A
 
 
-#### Math FUNCTIONS
-
 - SUM `SELECT SUM(Quantity) FROM OrderDetails`
 - MAX `SELECT ProductID, ProductName, MAX(Price) FROM Products`
-- AVG
 
 ### Joins
 
@@ -312,7 +303,7 @@ JOIN Products ON OrderDetails.ProductID=Products.ProductID
 By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
 .
 
-Finde a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
+Find a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
 
 
 #### Group by
@@ -324,6 +315,8 @@ SELECT COUNT(ShipperID), ShipperID FROM [Orders]
 GROUP by ShipperID
 ```
 
+
+Lets do something useful with grouping. Lets find out which shipper has been used the most.
 
 ```
 SELECT COUNT(Orders.ShipperID), Orders.ShipperID, Shippers.ShipperName
@@ -340,17 +333,14 @@ Knowing what we just learned lets try to answer some questions about our data!
 - What is the most expensive item?
 - What is the most popular item?
 - Which customer has spent the most money?
-- Which cusomer has returned the most?
+- Which customer has returned the most?
 - Whats the most popular category?
-
 
 
 ## Keep Learning!!!
 
-challenges:
 
-
-Reosurces:
+Resources:
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
@@ -430,7 +420,7 @@ ORDER BY SUM(Products.Price) DESC
 	
 	```
 
-- Which cusomer has returned the most?
+- Which customer has returned the most?
 	- A: Ernst Handel
 	
 ```
@@ -441,6 +431,3 @@ JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 GROUP BY Customers.CustomerID
 ORDER BY COUNT(Customers.CustomerID) DESC
 ```
-
-
-- Whats the most popular category?
