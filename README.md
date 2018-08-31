@@ -378,12 +378,19 @@ Answers to the Questions Section:
 
 	
 - Q: What is the most expensive item? 
-	- 263.5
+	- Côte de Blaye
 	- `SELECT ProductID, ProductName, MAX(Price) FROM Products`
 	
 - Q: What is the most popular item?
-	- A:
-	- Query: `bjblblnlnnlnlk`
+	- A: Gorgonzola Telino
+
+	```
+SELECT SUM(OrderDetails.Quantity), Products.ProductName, OrderDetails.ProductID
+FROM OrderDetails
+JOIN Products ON OrderDetails.productID=Products.ProductID
+GROUP BY ProductName
+ORDER BY SUM(OrderDetails.Quantity) DESC
+```
 
 	
 - Which customer has spent the most money?
@@ -400,10 +407,6 @@ ORDER BY SUM(Products.Price) DESC
 	
 	```
 
-- What was the largest(price) order?
-
-- Whats the most popular category?
-
 - Which cusomer has returned the most?
 	- A: Ernst Handel
 	
@@ -415,3 +418,6 @@ JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 GROUP BY Customers.CustomerID
 ORDER BY COUNT(Customers.CustomerID) DESC
 ```
+
+
+- Whats the most popular category?
