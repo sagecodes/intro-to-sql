@@ -151,11 +151,12 @@ Products Tables:
 |  3 | Aniseed Syrup  | 1  | 2  |  12 - 550 ml bottles | 10  |
 
 
-Filter data table example:
+<!--Filter data table example:
 
-Rearrange table example:
+Rearrange table example:-->
 
-*Note:* This isn't actually changing the database. You're just choosing what and how to look at the data.
+
+*Note:* When we query this isn't actually changing the database. You're just choosing what and how to look at the data.
 
 The same database can be used in different ways across applications at the same time.
 
