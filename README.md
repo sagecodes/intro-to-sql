@@ -189,7 +189,9 @@ Its inportant to have the correct data type for your data. This ensures that sor
 Visit [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) and navigate to the SQL section.
 
 
-#### Filtering
+### Querying
+
+Lets do some different types quering. 
 
 Lets take a look at all the categories of prducts we have
 
@@ -209,26 +211,125 @@ Lets rearrange the orders by date
 SELECT * FROM Orders
 ORDER BY OrderDate DESC
 ```
+ASC = Acending
+DESC = Descending
 
-Neat! Lets see which customer made that top order! We will take the value from the CustomerID column.
+Neat! Lets see which customer made that top order (most recent)! We will take the value from the CustomerID column.
 
 ```
 SELECT * FROM customers
 WHERE CustomerID = '66'
 ```
 
+Cool! We can also query for matches in multiple columns
+
+```
+
+SELECT * FROM customers
+WHERE CustomerID = '66' AND ###
+
+```
+
+```
+OR
+```
 
 
-#### Reranging
+```
+LIKE
 
-#### Math
+```
 
-- Sum
+```
+Greater than
+```
+
+
+So far we have been retrurning all the colmuns of a record that match our query. What if we want to only look at a few of them? 
+
+Instead of using `*` to select all we can put in the specifc columns we want returned. We can also put them in different order!
+
+```
+SELECT Country, city, CustomerName FROM Customers
+```
+Lets order by Acending order (A-Z) of Country Name
+
+```
+SELECT Country, city, CustomerName FROM Customers
+ORDER BY Country ASC;
+```
+
+Lets See just a list of countries 
+Using `DISTINCT` will just return one instance.
+
+Run the query below with and without `DISTINCT` to see the difference.
+
+```
+SELECT DISTINCT Country FROM Customers
+ORDER BY Country ASC;
+
+```
+
+What customers have a name starting with `A`?
+
+```
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'A%'
+```
+
+#### Math FUNCTIONS
+
+- SUM `SELECT SUM(Quantity) FROM OrderDetails`
+- MAX `SELECT ProductID, ProductName, MAX(Price) FROM Products`
 - AVG
-- Count
+
+### Joins
+
+Join can be a bit trick to understand, so don't worry if you don't quite get it!
 
 
-#### Joins
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+
+ 
+ 
+SELECT * FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+
+        
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID, Products.productName
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+JOIN Products ON OrderDetails.ProductID=Products.ProductID
+
+Return cobined table
+
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID, Products.productName, Products.Price
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+JOIN Products ON OrderDetails.ProductID=Products.ProductID
+
+
+Sum Who spent the most
+
+SELECT Customers.CustomerName, SUM(Products.Price)
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+JOIN Products ON OrderDetails.ProductID=Products.ProductID
+GROUP BY CustomerName
+ORDER BY SUM(Products.Price) DESC
+
+
+
+
+
+
 
 #### Group by
 
@@ -242,6 +343,8 @@ Import first step is to understand your data.
 ## Questions
 Knowing what we just learned lets try to answer some questions about our data!
 
+- How many items have we shipped?
+- What is the most expensive item?
 - What is the most popular item?
 - Which customer has spent the most money?
 - What was the largest order?
@@ -269,13 +372,46 @@ Reosurces:
 ## Answers
 Answers to the Questions Section:
 
+- Q: How many items have we shipped?
+	- A: 12,743
+	- `SELECT SUM(Quantity) FROM OrderDetails`
+
+	
+- Q: What is the most expensive item? 
+	- 263.5
+	- `SELECT ProductID, ProductName, MAX(Price) FROM Products`
+	
 - Q: What is the most popular item?
 	- A:
 	- Query: `bjblblnlnnlnlk`
-- Which customer has spent the most money?
 
-- What was the largest order?
+	
+- Which customer has spent the most money?
+	- A: Ernst Handel 
+	
+	```
+SELECT Customers.CustomerName, SUM(Products.Price)
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+JOIN Products ON OrderDetails.ProductID=Products.ProductID
+GROUP BY CustomerName
+ORDER BY SUM(Products.Price) DESC
+	
+	```
+
+- What was the largest(price) order?
 
 - Whats the most popular category?
 
 - Which cusomer has returned the most?
+	- A: Ernst Handel
+	
+```
+SELECT Customers.CustomerName, COUNT(Customers.CustomerID)
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+GROUP BY Customers.CustomerID
+ORDER BY COUNT(Customers.CustomerID) DESC
+```
