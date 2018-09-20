@@ -399,10 +399,10 @@ Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events
 
 
 ## What is Galvanize?
-###### We are a community!
+
 #### Immersive Bootcamp
 - [Data Science](https://www.galvanize.com/san-francisco/data-science) - 1/22/2018
-- [Software Engineer](https://www.galvanize.com/san-francisco/web-development) - TBD
+- [Software Engineer](https://www.galvanize.com/san-francisco/web-development) - 10/29/2018
 
 #### Part-Time Courses
 
@@ -414,6 +414,9 @@ Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events
 
 #### Co-working Space
 [work in our building!](https://www.galvanize.com/entrepreneur)
+
+
+#### We are a community!
 
 ## Questions:
 Please feel free to reach out to me with any questions!
