@@ -40,6 +40,8 @@ Give a quick Intro!
 - Whats your background?
 - Why are you interested in SQL and data?
 
+One of the best things about these in person workshops is being able to meet new people! Talk to eachother! 
+
 
 ## What this workshop is
 
@@ -342,8 +344,15 @@ SELECT * FROM Customers
 ```
 
 ##### What's Null?
+You should notice that some of the sections on our new row contain the word `null`. 
+In SQL you can think of `null` means that the cell contains no value. 
+
 
 #### Update
+
+```
+SELECT * FROM Customers
+```
 
 ```
 UPDATE Customers
@@ -351,6 +360,11 @@ SET ContactName='Alfred Schmidt', City='Frankfurt'
 WHERE CustomerID=1;
 ```
 
+```
+SELECT * FROM Customers
+```
+
+Its common to select and update more than one single row by ID. 
 
 ```
 SELECT * FROM Customers
@@ -367,29 +381,37 @@ WHERE CustomerName LIKE 'A%'
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'A%'
 ```
+
 #### Delete
 
 ```
-DELETE FROM Customers
-WHERE CustomerName='Alfreds Futterkiste';
+SELECT * FROM Customers
 ```
 
-https://www.w3schools.com/sql/sql_insert.asp
+```
+DELETE FROM Customers
+WHERE CustomerName='Sage';
+```
+
+```
+SELECT * FROM Customers
+```
+
 
 ### Joins
 
-Joins can be a bit trick to understand, so don't worry if you don't quite get it! read and practice them further [here](https://www.w3schools.com/sql/sql_join.asp)
+We're not going to go super deep into joins in this workshop and they can be a bit tricky to understand, so don't worry if you don't quite get it yet! Read about and practice them further [here](https://www.w3schools.com/sql/sql_join.asp).
 
-Return combined table
+This of it as essectially joining tables together. We're then returning combined table for use to use. 
 
 ```
-
 SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID, Products.productName, Products.Price
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 JOIN Products ON OrderDetails.ProductID=Products.ProductID
 ```
+
 By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
 .
 
@@ -418,15 +440,17 @@ ORDER BY COUNT(Orders.ShipperID) DESC
 
 ### Comments
 
+Comments are awesome. When you're writing more complex code / queries use comments to help you remember what that piece of code is doing!
+
+
 ```
 -- SQL Comment
+SELECT * FROM Customers
 ```
 
 
 ### Recap!
 
-
-- 
 
 
 
@@ -450,6 +474,7 @@ Resources:
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
+- [Read about what an ORM (Object-relational mapping) is](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
 
 Setup an actual database on your computer!
 
@@ -490,9 +515,12 @@ This was only my 2nd time running this workshop, help improve it by giving me fe
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
 - Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
 
+THANK YOU FOR HAVING ME SAN FRANCISCO!
 
 
-## Answers
+
+---------
+## Query Answers
 Answers to the Questions Section:
 
 - Q: How many items have we shipped?
@@ -501,13 +529,13 @@ Answers to the Questions Section:
 
 	
 - Q: What is the most expensive item? 
-	- Côte de Blaye
+	- A: Côte de Blaye
 	- `SELECT ProductID, ProductName, MAX(Price) FROM Products`
 	
 - Q: What is the most popular item?
 	- A: Gorgonzola Telino
 
-```
+		```
 SELECT SUM(OrderDetails.Quantity), Products.ProductName, OrderDetails.ProductID
 FROM OrderDetails
 JOIN Products ON OrderDetails.productID=Products.ProductID
@@ -536,7 +564,7 @@ ORDER BY SUM(Products.Price) DESC
 - Which customer has returned the most?
 	- A: Ernst Handel
 	
-```
+		```
 SELECT Customers.CustomerName, COUNT(Customers.CustomerID)
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
