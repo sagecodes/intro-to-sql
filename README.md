@@ -48,6 +48,8 @@ Data is information. Imagine a phonebook with hundreds of people and businesses.
 
 A database is computerized storage of data. Imagine an organized digital collections of the same people and businesses from the above phone book.
 
+###### Examples
+
 Examples of products using databases.
 
 - Dynamic sites
@@ -77,8 +79,7 @@ Pronounced `S` `Q` `L` or Sequel. Either way is fine!
 
 SQL stands for Structured Query Language
 
-When we return Data from a database we call it Querying.
-
+When we return and search data from a database we call it Querying.
 
 Common SQL Databases:
 
@@ -87,13 +88,13 @@ Each of these databases can be Queried using the SQL programming Language.
 - MySQL
 - PostgreSQL
 - Microsoft SQL
-- SQLie 
+- SQLite 
 - Oracle
 
-*Note:* There are some slight differences to each database
+*Note:* There are some slight differences to each database, but most of the SQL commands we're going to cover will be the same or very similar.
 
 
-Some other popular databases 
+Some other popular databases to keep an eye out for as you continue to learn:
 
 - MongoDB
 - Couchbase
@@ -186,9 +187,12 @@ Its important to have the correct data type for your data. This ensures that sor
 *Note:* Data types may change depending on which database you're using.
 
 
-We could spend a whole workshop discussing databases, but lets move to more SQL. 
+We could spend a whole workshop discussing databases, but we're going to focus on querying language SQL for the remainder of this workshop. 
 
-Read more details on databases [here](https://www.w3schools.com/sql/sql_create_db.asp). 
+Learn more about databases on your own [here](https://www.w3schools.com/sql/sql_create_db.asp)!
+
+If you would like to see a workshop more focused on Databases and how create them let me know!
+
 
 
 ## lets do some SQL!
