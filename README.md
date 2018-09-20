@@ -25,6 +25,10 @@ You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited 
 ## About me:
 Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects! 
 
+*caveat* I'm not an Galvanize instructor, they're much better at teaching than I am!
+
+If you have an event you would like to see or put on let me know! I'm always looking for ideas.
+
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
