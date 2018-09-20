@@ -162,8 +162,6 @@ Products Tables:
 Rearrange table example:-->
 
 
-*Note:* When we query this isn't actually changing the database. You're just choosing what and how to look at the data.
-
 The same database can be used in different ways across applications at the same time.
 
 - Website could be pulling data to show your purchase history
@@ -202,19 +200,19 @@ Visit [w3schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_selec
 
 ### Querying
 
-Import first step is to understand your data.
+Important first step is to understand your data.
 
 - How is it structured?
 - What does it represent?
 
 
-Lets do some different types querying. 
+Lets do some different types querying to figure this out!
 
 Lets take a look at all the categories of products we have
 
 `SELECT * FROM Categories`
 
-Lets see how many customers do we have?
+Lets see how many customers we have?
 
 `SELECT COUNT(*) FROM Customers`
 
@@ -223,6 +221,8 @@ Lets take a look at our orders
 `SELECT * FROM Orders`
 
 Lets rearrange the orders by date
+
+*Note:* When we query this isn't actually changing the database. You're just choosing what and how to look at the data.
 
 ```
 SELECT * FROM Orders
@@ -296,6 +296,24 @@ WHERE CustomerName LIKE 'A%'
 - SUM `SELECT SUM(Quantity) FROM OrderDetails`
 - MAX `SELECT ProductID, ProductName, MAX(Price) FROM Products`
 
+
+### Changing Data to the database
+
+
+
+So far we've only been looking at our data in different ways. Lets actually make some changes to the database
+
+#### Insert into
+
+#### Update
+
+#### Delete
+
+
+
+
+https://www.w3schools.com/sql/sql_insert.asp
+
 ### Joins
 
 Joins can be a bit trick to understand, so don't worry if you don't quite get it! read and practice them further [here](https://www.w3schools.com/sql/sql_join.asp)
@@ -335,6 +353,21 @@ JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID
 GROUP by Orders.ShipperID
 ORDER BY COUNT(Orders.ShipperID) DESC
 ```
+
+### Comments
+
+```
+-- SQL Comment
+```
+
+
+### Recap!
+
+
+- 
+
+
+
 
 ## Questions
 Knowing what we just learned lets try to answer some questions about our data!
