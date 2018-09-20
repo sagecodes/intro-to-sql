@@ -2,11 +2,12 @@
 
 ## short URL to this repo [sqlrepo.sage.codes](https://github.com/sagecodes/into-to-sql)
 
-## Do these things first!
+## Setting up your computer:
 
 - Open your web browser. I'll be using [chrome](https://www.google.com/chrome/), but feel free to use your whatever your favorite browser is. 
 - to speed up learnnig we're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
 
+That was easy!
 
 
 ## Galvanize 
@@ -16,7 +17,6 @@
 We create a technology ecosystem for learners, entrepreneurs, startups, and established companies to meet the needs of the rapidly changing digital world.
 
 We're an awesome community!!! 
-
 
 
 ## About me:
@@ -490,8 +490,8 @@ Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events
 ## What is Galvanize?
 
 #### Immersive Bootcamp
-- [Data Science](https://www.galvanize.com/san-francisco/data-science) - 1/22/2018
-- [Software Engineer](https://www.galvanize.com/san-francisco/web-development) - 10/29/2018
+- [Data Science](https://www.galvanize.com/san-francisco/data-science) - 1/22/2019
+- [Software Engineer](https://www.galvanize.com/san-francisco/web-development) - 10/5/2018
 
 #### Part-Time Courses
 
