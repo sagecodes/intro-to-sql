@@ -390,26 +390,25 @@ Resources:
 - [mimo](https://getmimo.com/) Mobile app
 
 ## Upcoming Events!
-We host sooo many events! check out out [calendar](https://www.galvanize.com/seattle/events)
+We host sooo many events! check out out [calendar](https://www.galvanize.com/san-francisco/events)
 
-[Learn code](https://www.meetup.com/Learn-Code-Seattle/events/). Thats this meetup! We do workshops and community programming nights! 
+[Learn code](https://www.meetup.com/learn-to-code-san-francisco/). Thats this meetup! We do workshops and community programming nights! Keep an eye out for more events coming to San Francisco soon! 
 
 Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events/):
 
-- [Intro to Javascript](https://www.meetup.com/Learn-Code-Seattle/events/253466275/) - 9/06 6:30pm
-- [Intro to Git and GitHub](https://www.meetup.com/Learn-Code-Seattle/events/253466429/) - 9/19 6:30pm
-- [More!!!](https://www.meetup.com/Learn-Code-Seattle/events/)
+
 
 ## What is Galvanize?
 ###### We are a community!
 #### Immersive Bootcamp
-- [Data Science](https://www.galvanize.com/seattle/data-science)
-- [Web Development](https://www.galvanize.com/seattle/web-development)
+- [Data Science](https://www.galvanize.com/san-francisco/data-science) - 1/22/2018
+- [Software Engineer](https://www.galvanize.com/san-francisco/web-development) - TBD
 
 #### Part-Time Courses
-- [Data Analytics](https://www.galvanize.com/seattle/data-analytics)
-- [Web Development Foundations with JavaScript](https://www.galvanize.com/seattle/web-development-foundations)
-- [Data Science Fundamentals](https://www.galvanize.com/seattle/data-science-fundamentals)
+
+- [Python Accelerated Evening Course](https://www.galvanize.com/seattle/web-development-foundations) - 10/29/2018
+- [2 Day Statistics Short-Course](https://www.galvanize.com/seattle/data-analytics) - 12/04/2018
+
 
 
 
