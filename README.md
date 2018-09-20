@@ -311,28 +311,68 @@ WHERE CustomerName LIKE 'A%'
 
 ## Functions
 
-- SUM `SELECT SUM(Quantity) FROM OrderDetails`
-- MAX `SELECT ProductID, ProductName, MAX(Price) FROM Products`
+If you've used excel you'll probably be familiar with some of these functions. 
 
-COUNT(), AVG() and SUM()
 
-^ add more structure to query portion
+- SUM() `SELECT SUM(Quantity) FROM OrderDetails`
+- MAX() `SELECT ProductID, ProductName, MAX(Price) FROM Products`
+- MIN() `SELECT ProductID, ProductName, MIN(Price) FROM Products`
+- AVG() `SELECT AVG(Price) FROM Products`
+- COUNT() `SELECT COUNT(*) FROM Customers`
 
 
 ### Changing Data to the database
 
+So far we've only been looking at our data in different ways, which is super usefule for answering questions, but lets actually make some changes to the database!
 
-
-So far we've only been looking at our data in different ways. Lets actually make some changes to the database
 
 #### Insert into
 
+```
+SELECT * FROM Customers
+```
+
+```
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Sage', 'Seattle', 'USA');
+```
+
+```
+SELECT * FROM Customers
+```
+
+##### What's Null?
+
 #### Update
 
+```
+UPDATE Customers
+SET ContactName='Alfred Schmidt', City='Frankfurt'
+WHERE CustomerID=1;
+```
+
+
+```
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'A%'
+```
+
+```
+UPDATE Customers
+SET ContactName='I started with an A', City='A town'
+WHERE CustomerName LIKE 'A%'
+```
+
+```
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'A%'
+```
 #### Delete
 
-
-
+```
+DELETE FROM Customers
+WHERE CustomerName='Alfreds Futterkiste';
+```
 
 https://www.w3schools.com/sql/sql_insert.asp
 
@@ -397,27 +437,29 @@ Knowing what we just learned lets try to answer some questions about our data!
 - How many items have we shipped?
 - What is the most expensive item?
 - What is the most popular item?
-- Which customer has spent the most money?
+<!--- Which customer has spent the most money?-->
 - Which customer has returned the most?
 - Whats the most popular category?
 
+You can find some of the answers at the bottom of this repo to help get you going!
+
 
 ## Keep Learning!!!
-
 
 Resources:
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
-- [mimo](https://getmimo.com/) Mobile app
+
+Setup an actual database on your computer!
+
 
 ## Upcoming Events!
-We host sooo many events! check out out [calendar](https://www.galvanize.com/san-francisco/events)
+We host so many events! check out our [calendar](https://www.galvanize.com/san-francisco/events)
 
 [Learn code](https://www.meetup.com/learn-to-code-san-francisco/). Thats this meetup! We do workshops and community programming nights! Keep an eye out for more events coming to San Francisco soon! 
 
 Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events/):
-
 
 
 ## What is Galvanize?
@@ -432,8 +474,6 @@ Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events
 - [2 Day Statistics Short-Course](https://www.galvanize.com/seattle/data-analytics) - 12/04/2018
 
 
-
-
 #### Co-working Space
 [work in our building!](https://www.galvanize.com/entrepreneur)
 
@@ -443,6 +483,9 @@ Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events
 ## Questions:
 Please feel free to reach out to me with any questions!
 
+This was only my 2nd time running this workshop, help improve it by giving me feedback :)
+
+- Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
 - Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
@@ -473,11 +516,11 @@ ORDER BY SUM(OrderDetails.Quantity) DESC
 ```
 
 	
-- Which customer has spent the most money?
+<!--- Which customer has spent the most money?
 	- A: Ernst Handel 
 	
 	
-	FIX: DOn't Just SUM price. Need to multiple
+FIX: Don't Just SUM price. Need to multiple
 	
 ```
 SELECT Customers.CustomerName, SUM(Products.Price)
@@ -488,7 +531,7 @@ JOIN Products ON OrderDetails.ProductID=Products.ProductID
 GROUP BY CustomerName
 ORDER BY SUM(Products.Price) DESC
 	
-```
+```-->
 
 - Which customer has returned the most?
 	- A: Ernst Handel
