@@ -6,28 +6,25 @@
 
 - Open your web browser. I'll be using [chrome](https://www.google.com/chrome/), but feel free to use your whatever your favorite browser is. 
 - to speed up learnnig we're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
- 
-## What this workshop is
 
-A super friendly introduction to SQL No previous experience expected! 
 
-You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited and comfortable to keep working and learning on your own! Come to our almost weekly code hours [meetups](https://www.meetup.com/Learn-Code-Seattle/events/) to ask questions if you get stuck and show off what you've been working on!
 
-- This course is for absolute beginners
-- Ask Questions!
-- Answer Questions!
-- Help others when you can
-- Its ok to get stuck, just ask for help!
-- Feel free to move ahead
-- Be patient and nice
+## Galvanize 
+
+### Welcome to Galvanize!
+
+We create a technology ecosystem for learners, entrepreneurs, startups, and established companies to meet the needs of the rapidly changing digital world.
+
+We're an awesome community!!! 
+
 
 
 ## About me:
-Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects! 
+Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects (I can't wait to do a workshop round these topics)! 
 
 *caveat* I'm not an Galvanize instructor, they're much better at teaching than I am!
 
-If you have an event you would like to see or put on let me know! I'm always looking for ideas.
+If you have an event you would like to see or put on let me know! I'm always looking for ideas. Talk to me after the workshop or find me oneline at one of these:
 
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
@@ -42,6 +39,22 @@ Give a quick Intro!
 - Whats your name?
 - Whats your background?
 - Why are you interested in SQL and data?
+
+
+## What this workshop is
+
+A super friendly introduction to SQL No previous experience expected! 
+
+You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited and comfortable to keep working and learning on your own! Come to our almost weekly code hours [meetups](https://www.meetup.com/Learn-Code-Seattle/events/) to ask questions if you get stuck and show off what you've been working on!
+
+- This course is for absolute beginners
+- Ask Questions!
+- Answer Questions!
+- Help others when you can
+- Its ok to get stuck, just ask for help!
+- Feel free to move ahead
+- Be patient and nice
+
 
 ## Why is data important
 
@@ -79,7 +92,7 @@ Some Professional Roles that work with databases:
 
 ## What is SQL?
 
-Pronounced `S` `Q` `L` or Sequel. Either way is fine!
+Pronounced `S` `Q` `L` or `Sequel`. Either way is fine!
 
 SQL stands for Structured Query Language
 
@@ -96,7 +109,7 @@ Each of these databases can be Queried using the SQL programming Language.
 - Oracle
 
 *Note:* There are some slight differences to each database, but most of the SQL commands we're going to cover will be the same or very similar.
-
+ you can read more about the difference on common SQL databases [here](https://www.w3schools.com/sql/sql_ref_mysql.asp).
 
 Some other popular databases to keep an eye out for as you continue to learn:
 
@@ -117,11 +130,10 @@ ORM stands for Object relation model
 
 ## What is a relational database?
 
-Two major components in a database
+There are two major components in a database:
 
-Data(Information Stored) and Schema(How the data is organized)
-
-Sections are called tables
+- Data(Information Stored) and Schema(How the data is organized)
+- Sections are called tables
 
 
 ##### Tables
@@ -297,8 +309,14 @@ WHERE CustomerName LIKE 'A%'
 - '%A%' Contains an A
 
 
+## Functions
+
 - SUM `SELECT SUM(Quantity) FROM OrderDetails`
 - MAX `SELECT ProductID, ProductName, MAX(Price) FROM Products`
+
+COUNT(), AVG() and SUM()
+
+^ add more structure to query portion
 
 
 ### Changing Data to the database
