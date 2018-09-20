@@ -5,7 +5,7 @@
 ## Do these things first!
 
 - Open your web browser. I'll be using [chrome](https://www.google.com/chrome/), but feel free to use your whatever your favorite browser is. 
-- We're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
+- to speed up learnnig we're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
  
 ## What this workshop is
 
@@ -23,7 +23,7 @@ You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited 
 
 
 ## About me:
-Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist here at Galvanize! Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects! 
+Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects! 
 
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
@@ -41,13 +41,18 @@ Give a quick Intro!
 
 ## Why is data important
 
-Data = information | Imagine a phonebook with hundreds of people and businesses
+### What is Data?
+Data is information. Imagine a phonebook with hundreds of people and businesses.
 
-Databases = computerized storage of data | imagine an organized digital collections of people and businesses.
+### What is a Databases?
+
+A database is computerized storage of data. Imagine an organized digital collections of the same people and businesses from the above phone book.
+
+Examples of products using databases.
 
 - Dynamic sites
 	- Facebook
-	- Gmail 
+	- Gmail  
 - Mobile apps
 	- Uber
 	- Snapchat 
@@ -61,8 +66,8 @@ Databases = computerized storage of data | imagine an organized digital collecti
 Some Professional Roles that work with databases:
 
 - Web Developer
-- Data Analysis
-- Data Science
+- Data Analysist
+- Data scientist
 - Database Admin
 
 
