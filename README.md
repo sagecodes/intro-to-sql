@@ -237,15 +237,15 @@ Lets do some different types querying to figure this out!
 
 Lets take a look at all the categories of products we have
 
-`SELECT * FROM Categories`
+`SELECT * FROM Categories;`
 
 Lets see how many customers we have?
 
-`SELECT COUNT(*) FROM Customers`
+`SELECT COUNT(*) FROM Customers;`
 
 Lets take a look at our orders
 
-`SELECT * FROM Orders`
+`SELECT * FROM Orders;`
 
 Lets rearrange the orders by date
 
@@ -253,7 +253,7 @@ Lets rearrange the orders by date
 
 ```
 SELECT * FROM Orders
-ORDER BY OrderDate DESC
+ORDER BY OrderDate DESC;
 ```
 ASC = Ascending
 DESC = Descending
@@ -262,21 +262,21 @@ Neat! Lets see which customer made that top order (most recent)! We will take th
 
 ```
 SELECT * FROM customers
-WHERE CustomerID = '66'
+WHERE CustomerID = 66;
 ```
 
 Cool! We can also query for matches in multiple columns
 
 ```
 SELECT * FROM OrderDetails
-WHERE ProductID = '14' AND Quantity <'10'
+WHERE ProductID = 14 AND Quantity < 10;
 ```
 
 We can also filter columns by more than one value.
 
 ```
 SELECT * FROM OrderDetails
-WHERE ProductID = '14' OR ProductID='42'
+WHERE ProductID = 14 OR ProductID = 42;
 ```
 
 
@@ -285,7 +285,7 @@ So far we have been returning all the columns of a record that match our query. 
 Instead of using `*` to select all we can put in the specific columns we want returned. We can also put them in different order!
 
 ```
-SELECT Country, city, CustomerName FROM Customers
+SELECT Country, city, CustomerName FROM Customers;
 ```
 Lets order by Ascending order (A-Z) of Country Name
 
@@ -312,7 +312,7 @@ What customers have a name starting with `A`?
 
 ```
 SELECT * FROM Customers
-WHERE CustomerName LIKE 'A%'
+WHERE CustomerName LIKE 'A%';
 ```
 
 - 'A%' Starts with an A
@@ -327,11 +327,11 @@ Read more types of way to filter [here](https://www.w3schools.com/sql/sql_like.a
 If you've used excel you'll probably be familiar with some of these functions. 
 
 
-- SUM() `SELECT SUM(Quantity) FROM OrderDetails`
-- MAX() `SELECT ProductID, ProductName, MAX(Price) FROM Products`
-- MIN() `SELECT ProductID, ProductName, MIN(Price) FROM Products`
-- AVG() `SELECT AVG(Price) FROM Products`
-- COUNT() `SELECT COUNT(*) FROM Customers`
+- SUM() `SELECT SUM(Quantity) FROM OrderDetails;`
+- MAX() `SELECT ProductID, ProductName, MAX(Price) FROM Products;`
+- MIN() `SELECT ProductID, ProductName, MIN(Price) FROM Products;`
+- AVG() `SELECT AVG(Price) FROM Products;`
+- COUNT() `SELECT COUNT(*) FROM Customers;`
 
 
 ### Changing Data to the database
@@ -342,7 +342,7 @@ So far we've only been looking at our data in different ways, which is super use
 #### Insert into
 
 ```
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 ```
@@ -351,7 +351,7 @@ VALUES ('Sage', 'Seattle', 'USA');
 ```
 
 ```
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 ##### What's Null?
@@ -362,7 +362,7 @@ In SQL you can think of `null` means that the cell contains no value.
 #### Update
 
 ```
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 ```
@@ -372,7 +372,7 @@ WHERE CustomerID=1;
 ```
 
 ```
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 Its common to select and update more than one single row by ID. 
@@ -396,7 +396,7 @@ WHERE CustomerName LIKE 'A%'
 #### Delete
 
 ```
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 ```
@@ -405,7 +405,7 @@ WHERE CustomerName='Sage';
 ```
 
 ```
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 
@@ -421,8 +421,10 @@ OrderDetails.ProductID, Products.productName, Products.Price
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-JOIN Products ON OrderDetails.ProductID=Products.ProductID
+JOIN Products ON OrderDetails.ProductID=Products.ProductID;
 ```
+
+TODO: Make simpler for first join intro and add graph
 
 By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
 .
@@ -436,7 +438,7 @@ Instead of getting each row, sometimes we want to group them by
 
 ```
 SELECT COUNT(ShipperID), ShipperID FROM [Orders]
-GROUP by ShipperID
+GROUP by ShipperID;
 ```
 
 
@@ -447,7 +449,7 @@ SELECT COUNT(Orders.ShipperID), Orders.ShipperID, Shippers.ShipperName
 FROM [Orders]
 JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID
 GROUP by Orders.ShipperID
-ORDER BY COUNT(Orders.ShipperID) DESC
+ORDER BY COUNT(Orders.ShipperID) DESC;
 ```
 
 ### Comments
@@ -457,7 +459,7 @@ Comments are awesome. When you're writing more complex code / queries use commen
 
 ```
 -- SQL Comment
-SELECT * FROM Customers
+SELECT * FROM Customers;
 ```
 
 
@@ -537,12 +539,12 @@ Answers to the Questions Section:
 
 - Q: How many items have we shipped?
 	- A: 12,743
-	- `SELECT SUM(Quantity) FROM OrderDetails`
+	- `SELECT SUM(Quantity) FROM OrderDetails;`
 
 	
 - Q: What is the most expensive item? 
 	- A: Côte de Blaye
-	- `SELECT ProductID, ProductName, MAX(Price) FROM Products`
+	- `SELECT ProductID, ProductName, MAX(Price) FROM Products;`
 	
 - Q: What is the most popular item?
 	- A: Gorgonzola Telino
@@ -552,7 +554,7 @@ SELECT SUM(OrderDetails.Quantity), Products.ProductName, OrderDetails.ProductID
 FROM OrderDetails
 JOIN Products ON OrderDetails.productID=Products.ProductID
 GROUP BY ProductName
-ORDER BY SUM(OrderDetails.Quantity) DESC
+ORDER BY SUM(OrderDetails.Quantity) DESC;
 ```
 
 
@@ -565,5 +567,5 @@ FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 GROUP BY Customers.CustomerID
-ORDER BY COUNT(Customers.CustomerID) DESC
+ORDER BY COUNT(Customers.CustomerID) DESC;
 ```
