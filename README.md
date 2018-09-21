@@ -5,7 +5,7 @@
 ## Setting up your computer:
 
 - Open your web browser. I'll be using [chrome](https://www.google.com/chrome/), but feel free to use your whatever your favorite browser is. 
-- to speed up learnnig we're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
+- to speed up learning we're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
 
 That was easy!
 
@@ -27,7 +27,7 @@ Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist a
 
 *caveat* I'm not an Galvanize instructor, they're much better at teaching than I am!
 
-If you have an event you would like to see or put on let me know! I'm always looking for ideas. Talk to me after the workshop or find me oneline at one of these:
+If you have an event you would like to see or put on let me know! I'm always looking for ideas. Talk to me after the workshop or find me online at one of these:
 
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
@@ -43,7 +43,7 @@ Give a quick Intro!
 - Whats your background?
 - Why are you interested in SQL and data?
 
-One of the best things about these in person workshops is being able to meet new people! Talk to eachother! 
+One of the best things about these in person workshops is being able to meet new people! Talk to each other! 
 
 
 ## What this workshop is
@@ -90,7 +90,7 @@ Examples of products using databases.
 Some Professional Roles that work with databases:
 
 - Web Developer
-- Data Analysist
+- Data Analysts
 - Data scientist
 - Database Admin
 
@@ -184,9 +184,9 @@ Rearrange table example:-->
 
 Having multiple tables storing data can seem complicated at first, why not have everything in one giant table?
 
-Each table can have relationships with eachother, instead of repeating the same product how ever many times someone buys it, we can instead reference back to that product in a seperate table.
+Each table can have relationships with each other, instead of repeating the same product how ever many times someone buys it, we can instead reference back to that product in a separate table.
 
-Again, don't worry if this is a bit confusing! It will make more sence as we go!
+Again, don't worry if this is a bit confusing! It will make more sense as we go!
 
 
 The same database can be used in different ways across applications at the same time.
@@ -207,7 +207,7 @@ The most common data types are:
 - Numeric (cost, age, weight, quantity)
 - Dates (Dates and time)
 
-Its important to have the correct data type for your data. This ensures that sorting and calculations work properly. We won't be setting up a database in thie workshop, but it something to keep in mind when you do!
+Its important to have the correct data type for your data. This ensures that sorting and calculations work properly. We won't be setting up a database in this workshop, but it something to keep in mind when you do!
 
 *Note:* Data types may change depending on which database you're using.
 
@@ -336,7 +336,7 @@ If you've used excel you'll probably be familiar with some of these functions.
 
 ### Changing Data to the database
 
-So far we've only been looking at our data in different ways, which is super usefule for answering questions, but lets actually make some changes to the database!
+So far we've only been looking at our data in different ways, which is super useful for answering questions, but lets actually make some changes to the database!
 
 
 #### Insert into
@@ -413,10 +413,11 @@ SELECT * FROM Customers
 
 We're not going to go super deep into joins in this workshop and they can be a bit tricky to understand, so don't worry if you don't quite get it yet! Read about and practice them further [here](https://www.w3schools.com/sql/sql_join.asp).
 
-This of it as essectially joining tables together. We're then returning combined table for use to use. 
+This of it as essentially joining tables together. We're then returning combined table for use to use. 
 
 ```
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, OrderDetails.ProductID, Products.productName, Products.Price
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate,
+OrderDetails.ProductID, Products.productName, Products.Price
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
