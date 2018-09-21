@@ -14,11 +14,12 @@ That was easy!
 
 ### Welcome to Galvanize!
 
-Any questions about education at Galvanize SF email [learn@galvanize.com](mailto:learn@galvanize.com)
-
 We create a technology ecosystem for learners, entrepreneurs, startups, and established companies to meet the needs of the rapidly changing digital world.
 
 We're an awesome community!!! 
+
+
+Shout out to Jessica tonight! If you have any questions about Galvanize tale to her! You can also email her at [learn@galvanize.com](mailto:learn@galvanize.com)
 
 
 ## About me:
