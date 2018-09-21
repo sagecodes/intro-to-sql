@@ -14,6 +14,8 @@ That was easy!
 
 ### Welcome to Galvanize!
 
+Any questions about education at Galvanize SF email [learn@galvanize.com](mailto:learn@galvanize.com)
+
 We create a technology ecosystem for learners, entrepreneurs, startups, and established companies to meet the needs of the rapidly changing digital world.
 
 We're an awesome community!!! 
@@ -517,7 +519,7 @@ This was only my 2nd time running this workshop, help improve it by giving me fe
 
 THANK YOU FOR HAVING ME SAN FRANCISCO!
 
-
+Questions about education at Galvanize SF email [learn@galvanize.com](mailto:learn@galvanize.com)
 
 ---------
 ## Query Answers
