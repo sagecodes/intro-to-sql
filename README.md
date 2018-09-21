@@ -99,7 +99,7 @@ Some Professional Roles that work with databases:
 
 Pronounced `S` `Q` `L` or `Sequel`. Either way is fine!
 
-SQL stands for Structured Query Language
+SQL stands for Structured Query Language. This is the language and syntax we will use to interact with SQL databases. 
 
 When we return and search data from a database we call it Querying.
 
@@ -138,7 +138,7 @@ ORM stands for Object relation model
 There are two major components in a database:
 
 - Data(Information Stored) and Schema(How the data is organized)
-- Sections are called tables
+- Sections. Also called tables. This how the data get structured. 
 
 
 ##### Tables
@@ -182,6 +182,12 @@ Products Tables:
 
 Rearrange table example:-->
 
+Having multiple tables storing data can seem complicated at first, why not have everything in one giant table?
+
+Each table can have relationships with eachother, instead of repeating the same product how ever many times someone buys it, we can instead reference back to that product in a seperate table.
+
+Again, don't worry if this is a bit confusing! It will make more sence as we go!
+
 
 The same database can be used in different ways across applications at the same time.
 
@@ -201,7 +207,7 @@ The most common data types are:
 - Numeric (cost, age, weight, quantity)
 - Dates (Dates and time)
 
-Its important to have the correct data type for your data. This ensures that sorting and calculations work properly.
+Its important to have the correct data type for your data. This ensures that sorting and calculations work properly. We won't be setting up a database in thie workshop, but it something to keep in mind when you do!
 
 *Note:* Data types may change depending on which database you're using.
 
@@ -263,7 +269,7 @@ Cool! We can also query for matches in multiple columns
 
 ```
 SELECT * FROM OrderDetails
-WHERE ProductID = '14' AND 	Quantity <'10'
+WHERE ProductID = '14' AND Quantity <'10'
 ```
 
 We can also filter columns by more than one value.
@@ -289,7 +295,7 @@ ORDER BY Country ASC;
 ```
 
 Lets See just a list of countries 
-Using `DISTINCT` will just return one instance.
+Using `DISTINCT`. Which will just return one instance.
 
 Run the query below with and without `DISTINCT` to see the difference.
 
@@ -312,6 +318,8 @@ WHERE CustomerName LIKE 'A%'
 - 'A%' Starts with an A
 - '%A' Ends with an A
 - '%A%' Contains an A
+
+Read more types of way to filter [here](https://www.w3schools.com/sql/sql_like.asp).
 
 
 ## Functions
@@ -359,7 +367,7 @@ SELECT * FROM Customers
 
 ```
 UPDATE Customers
-SET ContactName='Alfred Schmidt', City='Frankfurt'
+SET ContactName='Sage', City='Seattle'
 WHERE CustomerID=1;
 ```
 
@@ -538,7 +546,7 @@ Answers to the Questions Section:
 - Q: What is the most popular item?
 	- A: Gorgonzola Telino
 
-		```
+```
 SELECT SUM(OrderDetails.Quantity), Products.ProductName, OrderDetails.ProductID
 FROM OrderDetails
 JOIN Products ON OrderDetails.productID=Products.ProductID
@@ -546,28 +554,11 @@ GROUP BY ProductName
 ORDER BY SUM(OrderDetails.Quantity) DESC
 ```
 
-	
-<!--- Which customer has spent the most money?
-	- A: Ernst Handel 
-	
-	
-FIX: Don't Just SUM price. Need to multiple
-	
-```
-SELECT Customers.CustomerName, SUM(Products.Price)
-FROM Orders
-JOIN Customers ON Orders.CustomerID=Customers.CustomerID
-JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-JOIN Products ON OrderDetails.ProductID=Products.ProductID
-GROUP BY CustomerName
-ORDER BY SUM(Products.Price) DESC
-	
-```-->
 
 - Which customer has returned the most?
 	- A: Ernst Handel
 	
-		```
+```
 SELECT Customers.CustomerName, COUNT(Customers.CustomerID)
 FROM Orders
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
