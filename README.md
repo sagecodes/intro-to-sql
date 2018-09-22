@@ -489,6 +489,7 @@ Resources:
 - [sqlzoo](https://sqlzoo.net/)
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
 - [Read about what an ORM (Object-relational mapping) is](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
+-[pgexercises](https://pgexercises.com/questions/basic/)
 
 Setup an actual database on your computer!
 
