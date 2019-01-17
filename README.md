@@ -415,6 +415,18 @@ We're not going to go super deep into joins in this workshop and they can be a b
 
 This of it as essentially joining tables together. We're then returning combined table for use to use. 
 
+A simple Join:
+
+```
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+```
+
+A more commplicated join:
+
+Don't worry if this doesn't click 100%. Joins are one of the more complicated parts of SQL!
+
 ```
 SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate,
 OrderDetails.ProductID, Products.productName, Products.Price
@@ -424,12 +436,12 @@ JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 JOIN Products ON OrderDetails.ProductID=Products.ProductID;
 ```
 
-TODO: Make simpler for first join intro and add graph
-
 By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
 .
 
 Find a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
+
+More helpful visilaizatoins and explanations can be found [here](http://www.sql-join.com/sql-join-types/).
 
 
 #### Group by
