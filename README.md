@@ -539,26 +539,25 @@ We host so many events! check out our [calendar](https://www.galvanize.com/san-f
 
 Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events/):
 
-
 ## What is Galvanize?
 
 #### Immersive Bootcamp
-- [Data Science](https://www.galvanize.com/san-francisco/data-science) - 1/22/2019
-- [Software Engineer](https://www.galvanize.com/san-francisco/web-development) - 10/5/2018
+- [Data Science](https://www.galvanize.com/data-science) - 1/22/19 - 4/19/19
+- [Software Engineer](https://www.galvanize.com/web-development) - 2/9/19 - 5/17/19
 
 #### Part-Time Courses
 
-- [Python Accelerated Evening Course](https://www.galvanize.com/seattle/web-development-foundations) - 10/29/2018
-- [2 Day Statistics Short-Course](https://www.galvanize.com/seattle/data-analytics) - 12/04/2018
-
+- [Data Analyitcs](https://www.galvanize.com/part-time/data-analytics) 2/12/19 - 5/2/19
+- [Python Fundamentals](https://www.galvanize.com/part-time/data-science-fundamentals) - 2/20/19 - 3/29/19
 
 #### Co-working Space
+
 [work in our building!](https://www.galvanize.com/entrepreneur)
 
+#### We are a community
 
-#### We are a community!
+## Questions
 
-## Questions:
 Please feel free to reach out to me with any questions!
 
 This was only my 2nd time running this workshop, help improve it by giving me feedback :)
@@ -573,7 +572,7 @@ THANK YOU FOR HAVING ME SAN FRANCISCO!
 Questions about education at Galvanize SF email [learn@galvanize.com](mailto:learn@galvanize.com)
 
 ---------
-## Query Answers
+## Challenge Answers
 Answers to the Questions Section:
 
 - Q: How many items have we shipped?
