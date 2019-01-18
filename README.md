@@ -18,14 +18,12 @@ We create a technology ecosystem for learners, entrepreneurs, startups, and esta
 
 We're an awesome community!!! 
 
-
-Shout out to Jessica tonight! If you have any questions about Galvanize tale to her! You can also email her at [learn@galvanize.com](mailto:learn@galvanize.com)
-
+Interested in learnig more about our Galvanize programs reach out to Lauren @ [lauren.lark@galvanize.com](mailto:lauren.lark@galvanize.com)
 
 ## About me:
-Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. Previously I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love technology! I'm currently learning more about how to build AI and VR projects (I can't wait to do a workshop round these topics)! 
+I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. In the past decade I've worked as a software and hardware engineer with mostly with Startups and Agencies in Seattle and Central Florida. I love technology! I'm currently learning more about Deep Learning & Computer Vision.
 
-*caveat* I'm not an Galvanize instructor, they're much better at teaching than I am!
+*caveat* I'm not an Galvanize instructor, They have much more industry experience and are better at teaching difficult topics!
 
 If you have an event you would like to see or put on let me know! I'm always looking for ideas. Talk to me after the workshop or find me online at one of these:
 
@@ -43,7 +41,7 @@ Give a quick Intro!
 - Whats your background?
 - Why are you interested in SQL and data?
 
-One of the best things about these in person workshops is being able to meet new people! Talk to each other! 
+One of the best things about these in person workshops is being able to meet new people! Talk to each other!
 
 
 ## What this workshop is
@@ -99,7 +97,7 @@ Some Professional Roles that work with databases:
 
 Pronounced `S` `Q` `L` or `Sequel`. Either way is fine!
 
-SQL stands for Structured Query Language. This is the language and syntax we will use to interact with SQL databases. 
+SQL stands for Structured Query Language. This is the language and syntax we will use to interact with SQL databases.
 
 When we return and search data from a database we call it Querying.
 
@@ -110,7 +108,7 @@ Each of these databases can be Queried using the SQL programming Language.
 - MySQL
 - PostgreSQL
 - Microsoft SQL
-- SQLite 
+- SQLite
 - Oracle
 
 *Note:* There are some slight differences to each database, but most of the SQL commands we're going to cover will be the same or very similar.
@@ -195,8 +193,6 @@ The same database can be used in different ways across applications at the same 
 - An analyst could be pulling the data to learn what the most popular item is
 
 
-
-
 ### Data types
 
 data types for table columns are defined in the schema
@@ -211,14 +207,11 @@ Its important to have the correct data type for your data. This ensures that sor
 
 *Note:* Data types may change depending on which database you're using.
 
-
 We could spend a whole workshop discussing databases, but we're going to focus on querying language SQL for the remainder of this workshop. 
 
 Learn more about databases on your own [here](https://www.w3schools.com/sql/sql_create_db.asp)!
 
 If you would like to see a workshop more focused on Databases and how create them let me know!
-
-
 
 ## lets do some SQL!
 
@@ -232,6 +225,13 @@ Important first step is to understand your data.
 - How is it structured?
 - What does it represent?
 
+### BREAKOUT: (5 minutes)
+
+Get the most out of this workkshop! We'll occasionally do a "breakout" and give you a challenge to do in several minutes. It can be even more effective to partner up with someome next to you, but you can work on your own if you wante. No pressure to solve the challenge. I'll share how I would solve it after the time is up. 
+
+- Lets explore the tables that we have before we begin to query them. On the right side, you can find all the tables that you have access to. With a partner, take a look at the information that we have access to in these tables!
+
+### Lecture Continued
 
 Lets do some different types querying to figure this out!
 
@@ -276,9 +276,14 @@ We can also filter columns by more than one value.
 
 ```
 SELECT * FROM OrderDetails
-WHERE ProductID = 14 OR ProductID = 42;
+WHERE ProductID = 14 OR Quantity < 10;
 ```
 
+### BREAK OUT: (5 minutes)
+
+- How would we see all the orders for the product with the ID either 14 or 16?
+
+### Continue Lecture
 
 So far we have been returning all the columns of a record that match our query. What if we want to only look at a few of them? 
 
@@ -321,8 +326,15 @@ WHERE CustomerName LIKE 'A%';
 
 Read more types of way to filter [here](https://www.w3schools.com/sql/sql_like.asp).
 
+### BREAKOUT (5 Minutes):
 
-## Functions
+- Can you query all the products that names start with a T?
+- What about all customers whose name begins with H?
+
+## Continue with Lecture
+
+
+### Functions
 
 If you've used excel you'll probably be familiar with some of these functions. 
 
@@ -357,6 +369,15 @@ SELECT * FROM Customers;
 ##### What's Null?
 You should notice that some of the sections on our new row contain the word `null`. 
 In SQL you can think of `null` means that the cell contains no value. 
+
+
+### BREAK OUT (5 min):
+
+- Insert your name into the customers database and then query all of the customers.
+- Insert a new product into the products table.
+
+### Continue Lecture
+
 
 
 #### Update
