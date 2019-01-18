@@ -535,15 +535,21 @@ Setup an actual database on your computer!
 
 
 ## Upcoming Events!
-We host so many events! check out our [calendar](https://www.galvanize.com/san-francisco/events)
 
-[Learn code](https://www.meetup.com/learn-to-code-san-francisco/). Thats this meetup! We do workshops and community programming nights! Keep an eye out for more events coming to San Francisco soon! 
+We host so many events! check out our [calendar](https://www.galvanize.com/events)
 
-Upcoming Learn to code [events](https://www.meetup.com/Learn-Code-Seattle/events/):
+Visit the [Learn to code Seattle](https://www.meetup.com/Learn-Code-Seattle/) meetup for all upcoming events.
+
+[JavaScript Functions & Scope](https://www.eventbrite.com/e/javascript-functions-scope-tickets-54008553036) - 1/23/19 6:30 - 8:30pm
+
+[JavaScript Mini Bootcamp: Fundamentals II](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-ii-tickets-54008664369) - 1/26/19 10am - 4:30pm
+
+[Web Scraping with Python](https://www.eventbrite.com/e/intro-to-web-scraping-with-python-tickets-540100886292) - 1/31/19 6:30 - 8:30pm
 
 ## What is Galvanize?
 
 #### Immersive Bootcamp
+
 - [Data Science](https://www.galvanize.com/data-science) - 1/22/19 - 4/19/19
 - [Software Engineer](https://www.galvanize.com/web-development) - 2/9/19 - 5/17/19
 
