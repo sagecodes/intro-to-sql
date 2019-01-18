@@ -523,6 +523,8 @@ Come up with your own questions. What are things you would like to know about th
 ## Keep Learning!!!
 
 Resources:
+- [Free Data Science Prep](https://www.galvanize.com/data-science-prep) - Galvanize
+- [Free Software Engineering Prep](https://www.galvanize.com/web-development/prep) - Galvanize
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
 - [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
