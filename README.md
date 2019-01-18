@@ -58,6 +58,10 @@ You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited 
 - Feel free to move ahead
 - Be patient and nice
 
+### Challenges:
+
+Get the most out of this workkshop! We'll occasionally do a "CHALLENGE" where I give you an exercise to do in several minutes. It can be even more effective to partner up with someome next to you, but you can work on your own if you want. No pressure to solve the challenge. I'll share how I would solve it after the time is up. 
+
 
 ## Why is data important
 
@@ -225,9 +229,7 @@ Important first step is to understand your data.
 - How is it structured?
 - What does it represent?
 
-### BREAKOUT: (5 minutes)
-
-Get the most out of this workkshop! We'll occasionally do a "breakout" and give you a challenge to do in several minutes. It can be even more effective to partner up with someome next to you, but you can work on your own if you wante. No pressure to solve the challenge. I'll share how I would solve it after the time is up. 
+### CHALLENGE: (5 minutes)
 
 - Lets explore the tables that we have before we begin to query them. On the right side, you can find all the tables that you have access to. With a partner, take a look at the information that we have access to in these tables!
 
@@ -279,7 +281,7 @@ SELECT * FROM OrderDetails
 WHERE ProductID = 14 OR Quantity < 10;
 ```
 
-### BREAK OUT: (5 minutes)
+### CHALLENGE: (5 minutes)
 
 - How would we see all the orders for the product with the ID either 14 or 16?
 
@@ -326,7 +328,7 @@ WHERE CustomerName LIKE 'A%';
 
 Read more types of way to filter [here](https://www.w3schools.com/sql/sql_like.asp).
 
-### BREAKOUT (5 Minutes):
+### CHALLENGE (5 Minutes):
 
 - Can you query all the products that names start with a T?
 - What about all customers whose name begins with H?
@@ -371,7 +373,7 @@ You should notice that some of the sections on our new row contain the word `nul
 In SQL you can think of `null` means that the cell contains no value. 
 
 
-### BREAK OUT (5 min):
+### CHALLENGE (5 min):
 
 - Insert your name into the customers database and then query all of the customers.
 - Insert a new product into the products table.
@@ -502,7 +504,8 @@ SELECT * FROM Customers;
 
 
 
-## Questions
+## More Challenges
+
 Knowing what we just learned lets try to answer some questions about our data!
 
 - How many items have we shipped?
@@ -510,9 +513,11 @@ Knowing what we just learned lets try to answer some questions about our data!
 - What is the most popular item?
 <!--- Which customer has spent the most money?-->
 - Which customer has returned the most?
-- Whats the most popular category?
+<!-- Whats the most popular category? -->
 
-You can find some of the answers at the bottom of this repo to help get you going!
+You can find the answers at the bottom of this repo to help get you going!
+
+Come up with your own questions. What are things you would like to know about the data? Figure out how to answer them.
 
 
 ## Keep Learning!!!
