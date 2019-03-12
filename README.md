@@ -2,6 +2,27 @@
 
 ## short URL to this repo [sqlrepo.sage.codes](https://github.com/sagecodes/into-to-sql)
 
+
+
+Brought to you by Galvanize. Learn more about the way we teach at [galvanize.com](http://galvanize.com).
+
+### FAQ: 
+
+- WIFI: `Galvanize Guest Seattle` | Password is posted on the walls
+- Bathrooms: Behind you down the hall to the left
+- Kitchen outside back classroom door with Coffee & Tea!
+- Snacks + water in back of room
+
+## Overview
+The goal of this brief course is to provide you with a fun introduction to  to SQL.
+
+#### Here's what we'll be doing:
+* Overview of basic Python and programming concepts
+* Building a simple application using Python
+* Playing around and break things
+
+
+
 ## Setting up your computer:
 
 - Open your web browser. I'll be using [chrome](https://www.google.com/chrome/), but  you can use [Safari](https://www.apple.com/safari/) or [Opera](https://www.opera.com/)(browsers that support [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database)). 
@@ -10,22 +31,21 @@
 That was easy!
 
 
-## Galvanize 
-
-### Welcome to Galvanize!
-
-We create a technology ecosystem for learners, entrepreneurs, startups, and established companies to meet the needs of the rapidly changing digital world.
-
-We're an awesome community!!! 
-
-Interested in learnig more about our Galvanize programs reach out to Lauren @ [lauren.lark@galvanize.com](mailto:lauren.lark@galvanize.com)
-
 ## About me:
-I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist at Galvanize Seattle. In the past decade I've worked as a software and hardware engineer with mostly with Startups and Agencies in Seattle and Central Florida. I love technology! I'm currently learning more about Deep Learning & Computer Vision.
 
-*caveat* I'm not an Galvanize instructor, They have much more industry experience and are better at teaching difficult topics!
+Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist here at Galvanize! For the past decade I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love making things with technology! 
 
-If you have an event you would like to see or put on let me know! I'm always looking for ideas. Talk to me after the workshop or find me online at one of these:
+
+**Note:** I'm not a Galvanize Instructor, they're way better at teaching! 
+
+Reach out to me if interested in:
+
+- breaking into the tech industry 
+- learning resources
+- meetup recommendations 
+- learning more about Galvanize
+- giving me suggestions for events!
+- being friends
 
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
@@ -39,7 +59,7 @@ Give a quick Intro!
 
 - Whats your name?
 - Whats your background?
-- Why are you interested in SQL and data?
+- Why are you interested in learning about SQL?
 
 One of the best things about these in person workshops is being able to meet new people! Talk to each other!
 
