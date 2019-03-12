@@ -543,6 +543,7 @@ Come up with your own questions. What are things you would like to know about th
 ## Keep Learning!!!
 
 Resources:
+
 - [Free Data Science Prep](https://www.galvanize.com/data-science-prep) - Galvanize
 - [Free Software Engineering Prep](https://www.galvanize.com/web-development/prep) - Galvanize
 - [w3schools](https://www.w3schools.com/sql/)
@@ -556,48 +557,53 @@ Setup an actual database on your computer!
 
 ## Upcoming Events!
 
-We host so many events! check out our [calendar](https://www.galvanize.com/events)
+[PuPPy](https://www.meetup.com/PSPPython/) is an awesome python group in Seattle! 
 
 Visit the [Learn to code Seattle](https://www.meetup.com/Learn-Code-Seattle/) meetup for all upcoming events.
 
-[JavaScript Functions & Scope](https://www.eventbrite.com/e/javascript-functions-scope-tickets-54008553036) - 1/23/19 6:30 - 8:30pm
+[Intro to Programming with Python](https://www.eventbrite.com/e/python-101-tickets-56532271546) Tue, March 12, 2019 6:30 PM – 8:30 PM
 
-[JavaScript Mini Bootcamp: Fundamentals II](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-ii-tickets-54008664369) - 1/26/19 10am - 4:30pm
+[JavaScript 101](https://www.eventbrite.com/e/javascript-101-tickets-56532859304) Thu, March 14, 2019 6:30 PM – 8:30 PM
 
-[Web Scraping with Python](https://www.eventbrite.com/e/intro-to-web-scraping-with-python-tickets-540100886292) - 1/31/19 6:30 - 8:30pm
+[JavaScript Fundamentals I Mini bootcamp](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-i-tickets-56532969634) Sat, March 16, 2019 10:00 AM – 4:30 PM
+
+[Intro to Machine Learning with Python](https://www.eventbrite.com/e/intro-to-machine-learning-tickets-56532340753) Thu, March 28, 2019 6:30 PM – 8:30 PM
+
+[JavaScript Fundamentals II Mini bootcamp](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-ii-tickets-56533046865) Sat, March 30, 2019 10:00 AM – 4:30 PM
+
 
 ## What is Galvanize?
 
 #### Immersive Bootcamp
 
-- [Data Science](https://www.galvanize.com/data-science) - 1/22/19 - 4/19/19
-- [Software Engineer](https://www.galvanize.com/web-development) - 2/9/19 - 5/17/19
+
+- [Software Engineer](https://www.galvanize.com/web-development) - 4/8/19 - 7/5/19
+- [Data Science](https://www.galvanize.com/data-science) - 5/6/19 - 8/6/19
+
 
 #### Part-Time Courses
 
-- [Data Analyitcs](https://www.galvanize.com/part-time/data-analytics) 2/12/19 - 5/2/19
-- [Python Fundamentals](https://www.galvanize.com/part-time/data-science-fundamentals) - 2/20/19 - 3/29/19
+- [Digital Marketing](https://www.galvanize.com/part-time/digital-marketing) - 4/15/19 - 6/7/19
+
+- [Data Analytics](https://www.galvanize.com/part-time/data-analytics) - 5/7/19 - 7/25/19
 
 #### Co-working Space
 
 [work in our building!](https://www.galvanize.com/entrepreneur)
 
-#### We are a community
+Let me know if you'd like to a tour!
 
 ## Questions
 
-Please feel free to reach out to me with any questions!
+Please feel free to reach out to me with any questions! Let me know what you're planning to do next and how I can help!
 
-This was only my 2nd time running this workshop, help improve it by giving me feedback :)
 
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
 - Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
 
-THANK YOU FOR HAVING ME SAN FRANCISCO!
 
-Questions about education at Galvanize SF email [learn@galvanize.com](mailto:learn@galvanize.com)
 
 ---------
 ## Challenge Answers
