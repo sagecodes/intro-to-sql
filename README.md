@@ -367,6 +367,13 @@ If you've used excel you'll probably be familiar with some of these functions.
 - AVG() `SELECT AVG(Price) FROM Products;`
 - COUNT() `SELECT COUNT(*) FROM Customers;`
 
+### CHALLENGE (5 min):
+
+- Whats the largest order based on Quantity?
+- Whats the Smallest order based on Quantity?
+
+### Continue Lecture
+
 
 ### Changing Data to the database
 
@@ -466,6 +473,15 @@ FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ```
 
+By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
+.
+
+Find a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
+
+More helpful visilaizatoins and explanations can be found [here](http://www.sql-join.com/sql-join-types/).
+
+
+
 A more commplicated join:
 
 Don't worry if this doesn't click 100%. Joins are one of the more complicated parts of SQL!
@@ -478,13 +494,6 @@ JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 JOIN Products ON OrderDetails.ProductID=Products.ProductID;
 ```
-
-By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
-.
-
-Find a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
-
-More helpful visilaizatoins and explanations can be found [here](http://www.sql-join.com/sql-join-types/).
 
 
 #### Group by
@@ -522,8 +531,6 @@ SELECT * FROM Customers;
 
 
 
-
-
 ## More Challenges
 
 Knowing what we just learned lets try to answer some questions about our data!
@@ -544,7 +551,7 @@ Come up with your own questions. What are things you would like to know about th
 
 Resources:
 
-- [Free Data Science Prep](https://www.galvanize.com/data-science-prep) - Galvanize
+- [Data Science Premium Prep - Free if you register soon!](https://www.galvanize.com/gift-of-prep?utm_medium=seattle&utm_source=meetup&utm_campaign=ltc) - Galvanize
 - [Free Software Engineering Prep](https://www.galvanize.com/web-development/prep) - Galvanize
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
