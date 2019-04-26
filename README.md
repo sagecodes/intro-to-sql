@@ -16,11 +16,6 @@ Brought to you by Galvanize. Learn more about the way we teach at [galvanize.com
 ## Overview
 The goal of this brief course is to provide you with a fun introduction to  to SQL.
 
-#### Here's what we'll be doing:
-* Overview of basic Python and programming concepts
-* Building a simple application using Python
-* Playing around and break things
-
 
 
 ## Setting up your computer:
@@ -301,7 +296,19 @@ SELECT * FROM OrderDetails
 WHERE ProductID = 14 OR Quantity < 10;
 ```
 
+You can also pass in a list of values to look at.
+
+```
+
+SELECT * FROM OrderDetails
+WHERE ProductID in (14,10);
+
+```
+
 ### CHALLENGE: (5 minutes)
+
+
+- How would we see all the orders for the product with the ID either 2 and quantity over 10?
 
 - How would we see all the orders for the product with the ID either 14 or 16?
 
@@ -551,11 +558,10 @@ Come up with your own questions. What are things you would like to know about th
 
 Resources:
 
-- [Data Science Premium Prep - Free if you register soon!](https://www.galvanize.com/gift-of-prep?utm_medium=seattle&utm_source=meetup&utm_campaign=ltc) - Galvanize
+- [Data Science Premium Prep](http://bit.ly/gprepdata) - Galvanize
 - [Free Software Engineering Prep](https://www.galvanize.com/web-development/prep) - Galvanize
 - [w3schools](https://www.w3schools.com/sql/)
 - [sqlzoo](https://sqlzoo.net/)
-- [Datacamp](https://www.datacamp.com/courses/intro-to-sql-for-data-science)
 - [Read about what an ORM (Object-relational mapping) is](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
 -[pgexercises](https://pgexercises.com/questions/basic/)
 
@@ -564,41 +570,51 @@ Setup an actual database on your computer!
 
 ## Upcoming Events!
 
-[PuPPy](https://www.meetup.com/PSPPython/) is an awesome python group in Seattle! 
-
 Visit the [Learn to code Seattle](https://www.meetup.com/Learn-Code-Seattle/) meetup for all upcoming events.
 
-[Intro to Programming with Python](https://www.eventbrite.com/e/python-101-tickets-56532271546) Tue, March 12, 2019 6:30 PM – 8:30 PM
+- [SQL 101](https://www.eventbrite.com/e/sql-101-tickets-58878275507) - 4/25 630pm
+- [JavaScript Mini Bootcamp: Fundamentals II](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-ii-tickets-58878315627) - 4/27 10am - 430pm
+- [Intro to Web Scraping for Data Science](https://www.eventbrite.com/e/intro-to-web-scraping-with-python-for-data-science-tickets-58878488143) 5/2 6:30pm
 
-[JavaScript 101](https://www.eventbrite.com/e/javascript-101-tickets-56532859304) Thu, March 14, 2019 6:30 PM – 8:30 PM
-
-[JavaScript Fundamentals I Mini bootcamp](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-i-tickets-56532969634) Sat, March 16, 2019 10:00 AM – 4:30 PM
-
-[Intro to Machine Learning with Python](https://www.eventbrite.com/e/intro-to-machine-learning-tickets-56532340753) Thu, March 28, 2019 6:30 PM – 8:30 PM
-
-[JavaScript Fundamentals II Mini bootcamp](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-ii-tickets-56533046865) Sat, March 30, 2019 10:00 AM – 4:30 PM
+More coming soon! What would you like to see?
 
 
-## What is Galvanize?
+# What is Galvanize?
+
+> We create a technology ecosystem for learners, entrepreneurs, startups and established companies to meet the needs of the rapidly changing digital world.
+
+![](https://github.com/sagecodes/intro-data-science/raw/master/campus.png)
+
+- Education
+- Co-Working
+- Events
+- Enterprise
+
+
+## Galvanize Classes
 
 #### Immersive Bootcamp
 
+Transform your career with our 13 week immersive programs
 
-- [Software Engineer](https://www.galvanize.com/web-development) - 4/8/19 - 7/5/19
-- [Data Science](https://www.galvanize.com/data-science) - 5/6/19 - 8/6/19
+- [Software Engineer](http://bit.ly/seawebdev) - 6/3/19 - 10/11/19
+- [Data Science](http://bit.ly/seadatascience) - 5/6/19 - 8/2/19
 
 
 #### Part-Time Courses
 
-- [Digital Marketing](https://www.galvanize.com/part-time/digital-marketing) - 4/15/19 - 6/7/19
+Learn while working with out evening part-time classes
 
-- [Data Analytics](https://www.galvanize.com/part-time/data-analytics) - 5/7/19 - 7/25/19
+- [Intro to Data Science](http://bit.ly/seaintrods) - 5/7/19 - 6/27/19
+
+- [Digital Marketing](http://bit.ly/seadm) - 5/13/19 - 7/3/19
+
+- [Data Analytics](http://bit.ly/seadataa) - 5/6/19 - 7/24/19
 
 #### Co-working Space
 
 [work in our building!](https://www.galvanize.com/entrepreneur)
 
-Let me know if you'd like to a tour!
 
 ## Questions
 
@@ -609,6 +625,8 @@ Please feel free to reach out to me with any questions! Let me know what you're 
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
 - Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
+
+
 
 
 
