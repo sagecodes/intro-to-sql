@@ -465,6 +465,9 @@ WHERE CustomerName='Sage';
 SELECT * FROM Customers;
 ```
 
+### CHALLENGE:
+
+Delete the record you put in with you name
 
 ### Joins
 
@@ -502,6 +505,10 @@ JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
 JOIN Products ON OrderDetails.ProductID=Products.ProductID;
 ```
 
+### CHALLENGE (5 min):
+
+Make a simple join on other tables!
+
 
 #### Group by
 
@@ -530,7 +537,10 @@ Comments are awesome. When you're writing more complex code / queries use commen
 
 ```
 -- SQL Comment
-SELECT * FROM Customers;
+-- another simple join
+SELECT Orders.ShipperID, Orders.ShipperID, Shippers.ShipperName
+FROM Orders
+JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID;
 ```
 
 
