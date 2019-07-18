@@ -2,25 +2,24 @@
 
 ## short URL to this repo [sqlrepo.sage.codes](https://github.com/sagecodes/into-to-sql)
 
+Learn more SQL and other skills with our free online prep courses!
 
+- [Start learning Data Science](http://bit.ly/gprepdata)
+- [Start learning Software Engineering](http://bit.ly/gsoftprep)
 
-Brought to you by Galvanize. Learn more about the way we teach at [galvanize.com](http://galvanize.com).
 
 ### FAQ: 
 
 - WIFI: `Galvanize Guest Seattle` | Password is posted on the walls
 - Bathrooms: Behind you down the hall to the left
 - Kitchen outside back classroom door with Coffee & Tea!
-- Snacks + water in back of room
-
-## Overview
-The goal of this brief course is to provide you with a fun introduction to  to SQL.
-
+- Snacks + water + swag in back of room
 
 
 ## Setting up your computer:
 
-- Open your web browser. I'll be using [chrome](https://www.google.com/chrome/), but  you can use [Safari](https://www.apple.com/safari/) or [Opera](https://www.opera.com/)(browsers that support [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database)). 
+- You'll only need a web browser. I'll be using [chrome](https://www.google.com/chrome/), but  you can use [Safari](https://www.apple.com/safari/) or [Opera](https://www.opera.com/)(browsers that support [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database)). 
+
 - to speed up learning we're going to use an [online editor and database](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all) for SQL from [W3Schools](https://www.w3schools.com/). 
 
 That was easy!
@@ -28,8 +27,9 @@ That was easy!
 
 ## About me:
 
-Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist here at Galvanize! For the past decade I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love making things with technology! 
+Hello I'm [Sage Elliott](http://sageelliott.com/). I'm a Technology Evangelist here at Galvanize! For about the past decade I've worked as a software and hardware engineer with Startups and Agencies in Seattle, WA and Melbourne, FL. I love making things with technology! 
 
+Currently I'm working on implementing more machine learning models!
 
 **Note:** I'm not a Galvanize Instructor, they're way better at teaching! 
 
@@ -56,14 +56,14 @@ Give a quick Intro!
 - Whats your background?
 - Why are you interested in learning about SQL?
 
-One of the best things about these in person workshops is being able to meet new people! Talk to each other!
+One of the best things about these in person workshops is being able to meet new people! Talk to each other and hang out after the workshop!
 
 
 ## What this workshop is
 
 A super friendly introduction to SQL No previous experience expected! 
 
-You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited and comfortable to keep working and learning on your own! Come to our almost weekly code hours [meetups](https://www.meetup.com/Learn-Code-Seattle/events/) to ask questions if you get stuck and show off what you've been working on!
+You can't learn EVERYTHING in ~2 hours. But you can learn enough to get excited and comfortable to keep working and learning on your own! 
 
 - This course is for absolute beginners
 - Ask Questions!
@@ -110,6 +110,8 @@ Some Professional Roles that work with databases:
 - Data Analysts
 - Data scientist
 - Database Admin
+- Bussiness Analysts
+- Product Managers
 
 
 ## What is SQL?
@@ -152,17 +154,17 @@ ORM stands for Object relation model
 
 ## What is a relational database?
 
-There are two major components in a database:
+The major components in a database:
 
 - Data(Information Stored) and Schema(How the data is organized)
 - Sections. Also called tables. This how the data get structured. 
 
 
 ##### Tables
-You can think of tables as spreadsheets:
+You can typically think of tables kind of as spreadsheets:
 
 
-| Column ↓  | Column ↓   |  Column ↓  |
+|   | Column ↓   |  Column ↓  |
 |---|---|---|
 | Row →   |   |   | 
 | Row →   |   |   |
@@ -206,11 +208,6 @@ Each table can have relationships with each other, instead of repeating the same
 Again, don't worry if this is a bit confusing! It will make more sense as we go!
 
 
-The same database can be used in different ways across applications at the same time.
-
-- Website could be pulling data to show your purchase history
-- An analyst could be pulling the data to learn what the most popular item is
-
 
 ### Data types
 
@@ -221,8 +218,20 @@ The most common data types are:
 - Text (Names, Descriptions)
 - Numeric (cost, age, weight, quantity)
 - Dates (Dates and time)
+- Null (No value)
 
-Its important to have the correct data type for your data. This ensures that sorting and calculations work properly. We won't be setting up a database in this workshop, but it something to keep in mind when you do!
+Its important to have the correct data type for your data. This ensures that sorting and calculations work properly. We won't be setting up a database from scratch in this workshop, but it something to keep in mind when you do!
+
+### CHALLENGE:
+Lets do a quick though experiment on Data types!
+
+- What data type should a Name be?
+- What data type should Quantity be?
+- What data type age be?
+- What data type should a shipped_date be?
+- What Data type should a Zip code be?
+- What datat type should a Phone number be?
+
 
 *Note:* Data types may change depending on which database you're using.
 
@@ -244,19 +253,23 @@ Important first step is to understand your data.
 - How is it structured?
 - What does it represent?
 
-### CHALLENGE: (5 minutes)
+### CHALLENGE:
 
-- Lets explore the tables that we have before we begin to query them. On the right side, you can find all the tables that you have access to. With a partner, take a look at the information that we have access to in these tables!
+- Lets explore the tables that we have before we begin to query them. On the right side, you can find all the tables that you have access to. Take a look at the information that we have access to in these tables!
 
-### Lecture Continued
+### Basic Querying
 
 Lets do some different types querying to figure this out!
 
 Lets take a look at all the categories of products we have
 
+This is a basic query. We're telling it it Select all elements from the table Categories.
+
 `SELECT * FROM Categories;`
 
 Lets see how many customers we have?
+
+we can use the `COUNT()` function built in to SQL. This will count all the records in the Customers Table.
 
 `SELECT COUNT(*) FROM Customers;`
 
@@ -264,9 +277,11 @@ Lets take a look at our orders
 
 `SELECT * FROM Orders;`
 
-Lets rearrange the orders by date
+Lets sort the orders by date
 
 *Note:* When we query this isn't actually changing the database. You're just choosing what and how to look at the data.
+
+We can sort using the `ORDER BY` keyword in sql. 
 
 ```
 SELECT * FROM Orders
@@ -277,40 +292,60 @@ DESC = Descending
 
 Neat! Lets see which customer made that top order (most recent)! We will take the value from the CustomerID column.
 
+We can filter to specific records or ranges of data using the `WHERE` keyword.
+
 ```
 SELECT * FROM customers
 WHERE CustomerID = 66;
 ```
 
-Cool! We can also query for matches in multiple columns
+Cool! We can also query for matches with multiple crteria using the `AND` keyword.
 
 ```
 SELECT * FROM OrderDetails
 WHERE ProductID = 14 AND Quantity < 10;
 ```
 
-We can also filter columns by more than one value.
+We can also filter columns by more than one value using the `OR` keyword.
 
 ```
 SELECT * FROM OrderDetails
-WHERE ProductID = 14 OR Quantity < 10;
+WHERE ProductID = 14 OR ProductID < 10;
 ```
 
-You can also pass in a list of values to look at.
+<!--You can also pass in a list of values to look at.
 
 ```
-
 SELECT * FROM OrderDetails
 WHERE ProductID in (14,10);
 
+```-->
+
+We can also combine the `AND` and `OR` keywords in a query.
+
+```
+SELECT * FROM OrderDetails
+WHERE ProductID = 14 OR ProductID < 10
+AND Quantity < 10;
 ```
 
-### CHALLENGE: (5 minutes)
+you can keep stacking the use of `AND` and `OR`s as much as you want!
 
 
-- How would we see all the orders for the product with the ID either 2 and quantity over 10?
+We can use the `AND` keyword to search in a range of data, but there is a shorter way of doing it with the `BETWEEN` keyword.
+
+
+
+
+### CHALLENGE:
+
+- How would we see all the orders for the product with the ID of 2 and quantity over 10?
 
 - How would we see all the orders for the product with the ID either 14 or 16?
+
+- How would we see all the orders for the product with the ID either 14 or 16 and quantity 10?
+
+
 
 ### Continue Lecture
 
@@ -339,6 +374,14 @@ ORDER BY Country ASC;
 
 ```
 
+Lets count how many countries our customers are in:
+
+```
+SELECT COUNT(DISTINCT Country) FROM Customers
+ORDER BY Country ASC;
+
+```
+
 
 Sometimes we want to filter by records that contain values or characters that are not an exact match.
 
@@ -355,10 +398,11 @@ WHERE CustomerName LIKE 'A%';
 
 Read more types of way to filter [here](https://www.w3schools.com/sql/sql_like.asp).
 
-### CHALLENGE (5 Minutes):
+### CHALLENGE
 
 - Can you query all the products that names start with a T?
 - What about all customers whose name begins with H?
+- Can you figure out how to return a count of them?
 
 ## Continue with Lecture
 
