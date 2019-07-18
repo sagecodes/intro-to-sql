@@ -668,21 +668,20 @@ More coming soon! What would you like to see?
 
 #### Immersive Bootcamp
 
-Transform your career with our 13 week immersive programs
+Transform your career with our immersive programs
 
-- [Software Engineer](http://bit.ly/seawebdev) - 6/3/19 - 10/11/19
-- [Data Science](http://bit.ly/seadatascience) - 5/6/19 - 8/2/19
+- [Software Engineer](http://bit.ly/seawebdev) - 7/22/19 & 9/9/19
+- [Data Science](http://bit.ly/seadatascience) - 8/19/19 & 12/2/19
+
+Remote Opptions available
 
 
 #### Part-Time Courses
 
-Learn while working with out evening part-time classes
+Learn while working with our evening part-time classes
 
-- [Intro to Data Science](http://bit.ly/seaintrods) - 5/7/19 - 6/27/19
+- [Intro to Data Science: Python Fundamenals](http://bit.ly/seapyfun) - 9/16/19 - 10/23/19
 
-- [Digital Marketing](http://bit.ly/seadm) - 5/13/19 - 7/3/19
-
-- [Data Analytics](http://bit.ly/seadataa) - 5/6/19 - 7/24/19
 
 #### Co-working Space
 
