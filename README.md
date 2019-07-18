@@ -383,6 +383,20 @@ ORDER BY Country ASC;
 ```
 
 
+#### Group by
+
+Instead of getting each row, sometimes we want to group them by 
+
+
+How many customers do we have in each country?
+
+```
+SELECT COUNT(*), Country FROM Customers
+GROUP by Country;
+```
+
+#### searching with Like
+
 Sometimes we want to filter by records that contain values or characters that are not an exact match.
 
 What customers have a name starting with `A`?
@@ -403,6 +417,10 @@ Read more types of way to filter [here](https://www.w3schools.com/sql/sql_like.a
 - Can you query all the products that names start with a T?
 - What about all customers whose name begins with H?
 - Can you figure out how to return a count of them?
+- Using group by how can find which shippers shipped the most products?
+
+
+
 
 ## Continue with Lecture
 
@@ -426,7 +444,85 @@ If you've used excel you'll probably be familiar with some of these functions.
 ### Continue Lecture
 
 
-### Changing Data to the database
+
+
+### Joins
+
+We're not going to go super deep into joins in this workshop and they can be a bit tricky to understand, so don't worry if you don't quite get it yet! Read about and practice them further [here](https://www.w3schools.com/sql/sql_join.asp).
+
+This of it as essentially joining tables together. We're then returning combined table for use to use. 
+
+A simple Join:
+
+```
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+```
+
+By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
+.
+
+Find a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
+
+More helpful visilaizatoins and explanations can be found [here](http://www.sql-join.com/sql-join-types/).
+
+
+
+A more commplicated join:
+
+Don't worry if this doesn't click 100%. Joins are one of the more complicated parts of SQL!
+
+```
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate,
+OrderDetails.ProductID, Products.productName, Products.Price
+FROM Orders
+JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
+JOIN Products ON OrderDetails.ProductID=Products.ProductID;
+```
+
+### CHALLENGE (5 min):
+
+Make a simple join on other tables!
+
+
+#### together!
+
+Lets do something useful with grouping & joins. Lets find out which shipper has been used the most. Like we did before using:
+
+```
+
+SELECT COUNT(ShipperID), ShipperID FROM [Orders]
+GROUP by ShipperID;
+```
+
+But lets use a join to add in the shipper name from the Shippers table!
+
+
+```
+SELECT COUNT(Orders.ShipperID), Orders.ShipperID, Shippers.ShipperName
+FROM [Orders]
+JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID
+GROUP by Orders.ShipperID
+ORDER BY COUNT(Orders.ShipperID) DESC;
+```
+
+### Comments
+
+Comments are awesome. When you're writing more complex code / queries use comments to help you remember what that piece of code is doing!
+
+
+```
+-- SQL Comment
+-- another simple join
+SELECT Orders.ShipperID, Orders.ShipperID, Shippers.ShipperName
+FROM Orders
+JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID;
+```
+
+
+### BONUS: Changing Data to the database
 
 So far we've only been looking at our data in different ways, which is super useful for answering questions, but lets actually make some changes to the database!
 
@@ -512,83 +608,6 @@ SELECT * FROM Customers;
 ### CHALLENGE:
 
 Delete the record you put in with you name
-
-### Joins
-
-We're not going to go super deep into joins in this workshop and they can be a bit tricky to understand, so don't worry if you don't quite get it yet! Read about and practice them further [here](https://www.w3schools.com/sql/sql_join.asp).
-
-This of it as essentially joining tables together. We're then returning combined table for use to use. 
-
-A simple Join:
-
-```
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
-FROM Orders
-INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
-```
-
-By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
-.
-
-Find a helpful graph on joins [here](https://stackoverflow.com/questions/565620/difference-between-join-and-inner-join).
-
-More helpful visilaizatoins and explanations can be found [here](http://www.sql-join.com/sql-join-types/).
-
-
-
-A more commplicated join:
-
-Don't worry if this doesn't click 100%. Joins are one of the more complicated parts of SQL!
-
-```
-SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate,
-OrderDetails.ProductID, Products.productName, Products.Price
-FROM Orders
-JOIN Customers ON Orders.CustomerID=Customers.CustomerID
-JOIN OrderDetails ON Orders.OrderID=OrderDetails.OrderID
-JOIN Products ON OrderDetails.ProductID=Products.ProductID;
-```
-
-### CHALLENGE (5 min):
-
-Make a simple join on other tables!
-
-
-#### Group by
-
-Instead of getting each row, sometimes we want to group them by 
-
-```
-SELECT COUNT(ShipperID), ShipperID FROM [Orders]
-GROUP by ShipperID;
-```
-
-
-Lets do something useful with grouping. Lets find out which shipper has been used the most.
-
-```
-SELECT COUNT(Orders.ShipperID), Orders.ShipperID, Shippers.ShipperName
-FROM [Orders]
-JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID
-GROUP by Orders.ShipperID
-ORDER BY COUNT(Orders.ShipperID) DESC;
-```
-
-### Comments
-
-Comments are awesome. When you're writing more complex code / queries use comments to help you remember what that piece of code is doing!
-
-
-```
--- SQL Comment
--- another simple join
-SELECT Orders.ShipperID, Orders.ShipperID, Shippers.ShipperName
-FROM Orders
-JOIN Shippers ON Orders.ShipperID=Shippers.ShipperID;
-```
-
-
-### Recap!
 
 
 
