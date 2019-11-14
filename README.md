@@ -325,14 +325,14 @@ We can also combine the `AND` and `OR` keywords in a query.
 
 ```
 SELECT * FROM OrderDetails
-WHERE ProductID = 14 OR ProductID < 10
+WHERE (ProductID = 14 OR ProductID = 10)
 AND Quantity < 10;
 ```
 
 you can keep stacking the use of `AND` and `OR`s as much as you want!
 
 
-We can use the `AND` keyword to search in a range of data, but there is a shorter way of doing it with the `BETWEEN` keyword.
+<!--We can use the `AND` keyword to search in a range of data, but there is a shorter way of doing it with the `BETWEEN` keyword.-->
 
 
 
@@ -645,11 +645,16 @@ Setup an actual database on your computer!
 
 Visit the [Learn to code Seattle](https://www.meetup.com/Learn-Code-Seattle/) meetup for all upcoming events.
 
-- [SQL 101](https://www.eventbrite.com/e/sql-101-tickets-58878275507) - 4/25 630pm
-- [JavaScript Mini Bootcamp: Fundamentals II](https://www.eventbrite.com/e/javascript-mini-bootcamp-fundamentals-ii-tickets-58878315627) - 4/27 10am - 430pm
-- [Intro to Web Scraping for Data Science](https://www.eventbrite.com/e/intro-to-web-scraping-with-python-for-data-science-tickets-58878488143) 5/2 6:30pm
+- [Break into Data Science Discussion Panel](https://www.meetup.com/Learn-Code-Seattle/events/266474850/) - 11/18/19 6:30pm
 
-More coming soon! What would you like to see?
+
+- [Intro to Machine Learning with Python](https://www.eventbrite.com/e/intro-to-machine-learning-free-tickets-78301755659) - 11/20/19 6:30pm
+
+- [Google AI Study Jam: Machine Learning and Image Processing](http://bit.ly/2NNv5Hz) - 11/21/19 5:00pm
+
+
+- [Breaking into Software Engineering / Web Development Discussion Panel](https://www.eventbrite.com/e/break-into-software-engineering-alumni-discussion-panel-seattle-tickets-72146364719) - 11/25/19
+
 
 
 # What is Galvanize?
@@ -670,17 +675,19 @@ More coming soon! What would you like to see?
 
 Transform your career with our immersive programs
 
-- [Software Engineer](http://bit.ly/seawebdev) - 7/22/19 & 9/9/19
-- [Data Science](http://bit.ly/seadatascience) - 8/19/19 & 12/2/19
+- [Software Engineer](http://bit.ly/seawebdev) - 12/09/19 & 2/10/2020
+- [Data Science](http://bit.ly/seadatascience) - 12/2/19 & 3/16/2020
 
-Remote Opptions available
+Remote options:
+
+check out [Galvanize.com](https://www.galvanize.com/)
 
 
 #### Part-Time Courses
 
-Learn while working with our evening part-time classes
+Learn while working with out evening part-time classes
 
-- [Intro to Data Science: Python Fundamenals](http://bit.ly/seapyfun) - 9/16/19 - 10/23/19
+[Galvanize.com](https://www.galvanize.com/)
 
 
 #### Co-working Space
