@@ -2,7 +2,7 @@
 
 ## short URL to this repo [sqlrepo.sage.codes](https://github.com/sagecodes/into-to-sql)
 
-Learn more SQL and other skills with our free online prep courses!
+Learn more SQL and other skills with our free online courses!
 
 - [Start learning Data Science](http://bit.ly/gprepdata)
 - [Start learning Software Engineering](http://bit.ly/gsoftprep)
@@ -42,6 +42,8 @@ Reach out to me if interested in:
 - giving me suggestions for events!
 - being friends
 
+Contact me at these places!
+
 - Website: [sageelliott.com](http://sageelliott.com/)
 - Twitter: [@sagecodes](https://twitter.com/@sagecodes)
 - LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
@@ -57,6 +59,13 @@ Give a quick Intro!
 - Why are you interested in learning about SQL?
 
 One of the best things about these in person workshops is being able to meet new people! Talk to each other and hang out after the workshop!
+
+### FAQ again for anyone who walked in:
+WIFI: Galvanize Guest Seattle | Password is posted on the walls
+Bathrooms: Behind you down the hall to the left
+Kitchen outside back classroom door with Coffee & Tea!
+Snacks + water + swag in back of room
+Setup: Just a browser
 
 
 ## What this workshop is
