@@ -392,6 +392,8 @@ ORDER BY Country ASC;
 ```
 
 
+
+
 #### Group by
 
 Instead of getting each row, sometimes we want to group them by 
@@ -402,6 +404,25 @@ How many customers do we have in each country?
 ```
 SELECT COUNT(*), Country FROM Customers
 GROUP by Country;
+```
+
+Lets organize by count
+
+```
+SELECT COUNT(*), Country
+FROM Customers
+GROUP BY Country
+ORDER BY COUNT(*) DESC;
+```
+
+We can use the `HAVING` keyword to add conditional filtering in `GROUP BY`, instead of `WHERE`.
+
+```
+SELECT COUNT(*), Country
+FROM Customers
+GROUP BY Country
+ORDER BY COUNT(*) DESC;
+HAVING COUNT(CustomerID) > 5;
 ```
 
 #### searching with Like
