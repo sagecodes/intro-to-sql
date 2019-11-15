@@ -490,6 +490,16 @@ FROM Orders
 INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
 ```
 
+Another example looking at the most expensive products
+
+```
+SELECT OrderDetails.Quantity, Products.ProductName
+FROM Products
+JOIN OrderDetails ON Products.ProductID=OrderDetails.ProductID
+ORDER BY OrderDetails.Quantity DESC;
+
+```
+
 By default when you just use 'join' we are creating a inner join. Read more about different joins [here](https://www.w3schools.com/sql/sql_join.asp)
 .
 
